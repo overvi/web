@@ -44,9 +44,16 @@ new Splide(".splide-supports", {
   direction: "rtl",
   arrows: false,
   pagination: false,
-
+  width: "100%",
   breakpoints: {
+    450: {
+      perPage: 2,
+    },
     600: {
+      perPage: 3,
+      perMove: 1,
+    },
+    900: {
       perPage: 4,
       perMove: 1,
     },

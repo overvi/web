@@ -45,9 +45,12 @@ new Splide(".splide-supports", {
   arrows: false,
   pagination: false,
   width: "100%",
+  autoplay: true,
+
   breakpoints: {
-    450: {
+    430: {
       perPage: 2,
+      padding: { right: ".6rem" },
     },
     600: {
       perPage: 3,

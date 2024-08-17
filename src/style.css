@@ -5,8 +5,14 @@
 @layer base {
   @font-face {
     font-family: "Yekan";
+    src: url(./assets/yekan/YekanBakh-Thin.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Yekan";
     src: url(./assets/yekan/YekanBakh-Light.woff2);
-
+    font-weight: 300;
     font-style: normal;
   }
   @font-face {
@@ -15,12 +21,7 @@
     font-style: normal;
     font-weight: bold;
   }
-  @font-face {
-    font-family: "Yekan";
-    src: url(./assets/yekan/YekanBakh-Medium.woff2);
-    font-style: normal;
-    font-weight: 600;
-  }
+
   @font-face {
     font-family: "Yekan";
     src: url(./assets/yekan/YekanBakh-Regular.woff2);
@@ -29,7 +30,13 @@
   }
   @font-face {
     font-family: "Yekan";
-    src: url(./assets/yekan/YekanBakh-Fat.woff2);
+    src: url(./assets/yekan/YekanBakh-Medium.woff2);
+    font-style: normal;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Yekan";
+    src: url(./assets/yekan/YekanBakhFaNum-Black.woff2);
     font-style: normal;
     font-weight: 800;
   }
@@ -49,5 +56,42 @@
 
   body {
     @apply font-['Yekan','sens-serif'];
+  }
+}
+
+@layer utilities {
+  .container-w {
+    max-width: 76.312rem;
+    margin: auto;
+    padding-inline: 12px;
+  }
+
+  .question {
+    @apply relative flex cursor-pointer items-center p-4 px-[.7rem];
+  }
+
+  .question::after {
+    @apply absolute left-[.6rem] flex size-[35px] items-center justify-center rounded-full bg-green-700/50 text-[2.2rem] leading-[0] text-green-700;
+    content: "\002B";
+    transition: 0.2s;
+  }
+
+  .question.active::after {
+    content: "\005f";
+    padding-bottom: 0.5rem;
+    @apply bg-gray-200/50 text-white;
+  }
+
+  .answercont {
+    transition: 0.3s;
+    @apply max-h-0 overflow-hidden;
+  }
+
+  .answer {
+    @apply pb-5 pr-5 leading-[1.5rem];
+  }
+
+  .faq-container:has(.active) {
+    @apply bg-green-600 text-white;
   }
 }

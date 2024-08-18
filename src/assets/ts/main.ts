@@ -45,7 +45,6 @@ new Splide(".splide-supports", {
   arrows: false,
   pagination: false,
   width: "100%",
-  autoplay: true,
 
   breakpoints: {
     430: {
@@ -77,6 +76,10 @@ new Splide(".splide-why", {
     },
     800: {
       perPage: 2,
+    },
+
+    1000: {
+      perPage: 3,
     },
   },
 }).mount();

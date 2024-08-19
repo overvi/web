@@ -1,5 +1,6 @@
 import Splide from "@splidejs/splide";
 import "@splidejs/splide/css/core";
+import "@ts/nav";
 
 new Splide(".splide-comments", {
   perPage: 3,
@@ -101,15 +102,4 @@ question.forEach((question) => {
       answer.style.maxHeight = "0";
     }
   });
-});
-
-const toggleNav = document.querySelector(".toggle-nav-menu");
-const navMenu = document.querySelector(".nav-menu")! as HTMLElement;
-
-toggleNav?.addEventListener("click", () => {
-  if (navMenu.style.gridTemplateRows == "1fr") {
-    navMenu.style.gridTemplateRows = "0fr";
-  } else {
-    navMenu.style.gridTemplateRows = "1fr";
-  }
 });

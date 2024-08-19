@@ -6,6 +6,7 @@ export default {
       sm: "460px",
       "mid-sm": "600px",
       md: "917px",
+      lg: "1100px",
     },
     extend: {
       backgroundImage: {
@@ -19,6 +20,7 @@ export default {
         "gray-800": "#515151", // Change later to /50 shade of gray-800 if required
         "green-350": "#EAF7F0",
         "gray-400": "#DFDFDF",
+        "gray-50": "#F1F1F1",
         circle: "rgba(29,122,85,30%)",
       },
     },

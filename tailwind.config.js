@@ -5,6 +5,7 @@ export default {
     screens: {
       sm: "460px",
       "mid-sm": "600px",
+      "high-sm": "720px",
       md: "917px",
       lg: "1100px",
     },
@@ -12,6 +13,9 @@ export default {
       backgroundImage: {
         "request-form": "url('./assets/images/request-form-bg.png')",
         "request-demo": "url('./assets/images/request-demo-bg.png')",
+        "green-demo": "url('./assets/images/green-demo.png')",
+        line: "url('./assets/images/line.svg')",
+        "line-small": "url('./assets/images/line-small.svg')",
       },
       colors: {
         "orange-400": "#F9B233",

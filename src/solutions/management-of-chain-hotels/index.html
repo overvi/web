@@ -225,7 +225,9 @@
         </div>
       </nav>
       <div class="border-y">
-        <div class="container-w flex items-center gap-3 p-3">
+        <div
+          class="container-w flex flex-col items-center gap-3 p-3 min-[400px]:flex-row"
+        >
           <svg
             width="18"
             height="18"
@@ -265,17 +267,21 @@
           >
             /
           </p>
-          <a class="font-bold" href="../hotels/">هتل ها</a>
+          <a class="font-bold" href="../management-of-chain-hotels/">
+            مدیریت هتل های زنجیره ای</a
+          >
         </div>
       </div>
     </header>
     <main>
-      <div class="m-auto my-32 w-fit max-w-[30rem] px-5 text-center">
+      <div class="m-auto my-32 w-fit px-5 text-center">
         <div>
-          <h1 class="text-7xl font-extrabold">هتل ها</h1>
+          <h1 class="text-center text-5xl font-extrabold md:text-7xl">
+            مدیریت هتل های زنجیره ای
+          </h1>
           <p class="mt-5 text-lg">
-            راهکار PMS ما مجموعه کاملی از ابزارها را برای مدیریت عملیات هتل در
-            اختیار هتل‌ها قرار می‌دهد.
+            راهکار مدیریت هتل‌های زنجیره‌ای ما یک پلتفرم مرکزی برای <br />مدیریت
+            چندین هتل در یک سازمان واحد ارائه می‌کند.
           </p>
         </div>
       </div>
@@ -292,7 +298,7 @@
                   <h2
                     class="high-sm:text-3xl text-center text-2xl font-extrabold"
                   >
-                    سیستم مدیریت <br />دارایی (PMS)
+                    گزارش‌گیری تلفیقی
                   </h2>
                 </div>
                 <svg
@@ -330,11 +336,12 @@
                   <h2
                     class="high-sm:text-3xl text-center text-2xl font-extrabold lg:text-right"
                   >
-                    سیستم <br class="lg:hidden" />رزرو مرکزی (CRS)
+                    جریان‌های کاری <br class="block lg:hidden" />
+                    استاندارد
                   </h2>
                   <p class="hidden lg:block">
-                    موتور رزرو در زمان واقعی که هتل‌ها را به آژانس‌های مسافرتی
-                    بزرگ و پلتفرم‌های رزرو آنلاین متصل می‌کند.
+                    جریان‌های کاری و فرآیندهای استاندارد را برای اطمینان از
+                    سازگاری در تمام دارایی‌ها پیاده‌سازی کنید.
                   </p>
                 </div>
 
@@ -380,8 +387,8 @@
                   <h2
                     class="high-sm:text-3xl text-center text-2xl font-extrabold"
                   >
-                    سیستم مدیریت<br />
-                    کانال (CMS)
+                    مدیریت داده‌های <br />
+                    متمرکز
                   </h2>
                 </div>
                 <svg
@@ -441,11 +448,11 @@
                   <h2
                     class="hidden p-[1.2rem] text-3xl font-extrabold lg:block"
                   >
-                    سیستم مدیریت دارایی (PMS)
+                    گزارش‌گیری تلفیقی
                   </h2>
                   <p>
-                    پلتفرمی مرکزی برای مدیریت رزرو، اطلاعات مهمان و عملیات
-                    هتلداری.
+                    گزارش‌های تلفیقی را در تمام دارایی‌ها ایجاد کنید تا بینشی در
+                    مورد عملکرد کلی به دست آورید.
                   </p>
                 </div>
                 <svg
@@ -481,8 +488,8 @@
                     سیستم مدیریت دارایی (PMS)
                   </h2>
                   <p>
-                    موتور رزرو در زمان واقعی که هتل‌ها را به آژانس‌های مسافرتی
-                    بزرگ و پلتفرم‌های رزرو آنلاین متصل می‌کند.
+                    جریان‌های کاری و فرآیندهای استاندارد را برای اطمینان از
+                    سازگاری در تمام دارایی‌ها پیاده‌سازی کنید.
                   </p>
                 </div>
                 <svg
@@ -512,11 +519,11 @@
                   <h2
                     class="hidden p-[1.2rem] text-3xl font-extrabold lg:block"
                   >
-                    سیستم مدیریت کانال (CMS)
+                    مدیریت داده‌های متمرکز
                   </h2>
                   <p>
-                    ابزاری برای همگام‌سازی دسترسی و نرخ اتاق در تمام کانال‌های
-                    توزیع.
+                    داده‌های مهمان، رزرو و سایر اطلاعات را به‌طور متمرکز مدیریت
+                    کنید تا کارایی را بهبود بخشید.
                   </p>
                 </div>
                 <svg
@@ -539,240 +546,44 @@
           </div>
         </div>
       </section>
-      <section class="container-w">
-        <div class="flex flex-col items-center justify-between lg:flex-row">
+
+      <div style="margin-inline: 1rem">
+        <div
+          class="container-w bg-green-demo high-sm:rounded-full !mx-auto !my-40 flex flex-col items-center justify-between rounded-2xl bg-[#EAF7F0] bg-cover bg-center bg-no-repeat md:flex-row md:bg-transparent"
+        >
           <div
-            class="order-1 flex flex-col items-center lg:-order-1 lg:flex-row"
+            class="flex flex-col items-center gap-3 p-3 font-medium sm:flex-row"
           >
-            <div
-              class="flex w-fit flex-col items-center justify-between bg-line-small bg-center bg-no-repeat"
-            >
-              <div
-                class="flex h-[107px] w-[107px] items-center justify-center rounded-full bg-green-600 text-5xl font-extrabold text-white"
-              >
-                <p>PMS</p>
-              </div>
-
-              <div
-                class="z-50 mt-10 block max-w-[25rem] bg-white text-center lg:hidden"
-              >
-                <p class="border-t-2 border-t-green-600 pt-5">
-                  PMS مخفف عبارت Property Management System است که به نرم افزار
-                  مدیریت اتاق ها و امکانات در هتل ها اشاره دارد. در حوزه صنعت
-                  گردشگری و هتلداری، PMS به مجموعه ای از نرم افزار ها گفته می
-                  شود که تمامی فعالیت های مرتبط با مدیریت هتل را شامل می شود.
-                </p>
-              </div>
-
-              <span
-                class="mb-[2rem] mt-32 block h-[15px] w-[15px] rounded-full bg-green-600 font-bold lg:mt-56"
-                ><p class="mr-5 block text-nowrap lg:hidden">
-                  مدیریت پرداختها
-                </p></span
-              >
-              <span
-                class="mb-[2rem] block h-[15px] w-[15px] rounded-full bg-green-600 font-bold"
-                ><p class="-mr-36 block text-nowrap lg:hidden">
-                  مدیریت تعویض اتاق ها
-                </p></span
-              >
-              <span
-                class="mb-[2rem] block h-[15px] w-[15px] rounded-full bg-green-600 font-bold"
-                ><p class="mr-5 block text-nowrap lg:hidden">
-                  تنظیم قیمت ها
-                </p></span
-              >
-              <span
-                class="mb-[2rem] block h-[15px] w-[15px] rounded-full bg-green-600 font-bold"
-                ><p class="-mr-32 block text-nowrap lg:hidden">
-                  مدیریت رزرواســیون
-                </p></span
-              >
-              <span
-                class="mb-[2rem] block h-[15px] w-[15px] rounded-full bg-green-600 font-bold"
-                ><p class="mr-5 block text-nowrap lg:hidden">
-                  مدیریت انبار
-                </p></span
-              >
-              <span
-                class="mb-[2rem] block h-[15px] w-[15px] rounded-full bg-green-600 font-bold"
-                ><p class="-mr-28 block text-nowrap lg:hidden">
-                  پذیــرش مســافرین
-                </p></span
-              >
-              <span
-                class="mb-[2rem] block h-[15px] w-[15px] rounded-full bg-green-600 font-bold"
-                ><p class="mr-5 block text-nowrap lg:hidden">
-                  مدیریت پرسنل
-                </p></span
-              >
-            </div>
-
-            <div class="hidden h-[40rem] flex-col justify-end lg:flex">
-              <p
-                class="relative before:absolute before:-right-14 before:block before:h-full before:w-[3px] before:bg-green-600"
-              >
-                PMS مخفف عبارت Property Management System است که به نرم افزار
-                مدیریت اتاق ها و امکانات در هتل ها اشاره دارد. در حوزه صنعت
-                گردشگری و هتلداری، PMS به مجموعه ای از نرم افزار ها گفته می شود
-                که تمامی فعالیت های مرتبط با مدیریت هتل را شامل می شود.
-              </p>
-              <ul class="mt-12 font-medium *:mb-[1.4rem]">
-                <li>مدیریت پرداختها</li>
-                <li>مدیریت تعویض اتاق ها</li>
-                <li>تنظیم قیمت ها</li>
-                <li>مدیریت رزرواســیون</li>
-                <li>مدیریت انبار</li>
-                <li>پذیــرش مســافرین</li>
-                <li>مدیریت پرسنل</li>
-              </ul>
-            </div>
+            <img class="p-3" width="100" src="/assets/images/gr.png" alt="" />
+            <p>
+              راهکـــار PMS ما برای کمک به هتل‌ها در افزایش نرخ اشغال، ساده‌سازی
+              عملیات <br />و ارائه یک تجربه مهمان برتر طراحی شده است.
+            </p>
           </div>
-          <img width="700" src="/assets/images/fpd-large.png" alt="" />
-        </div>
-      </section>
-      <section class="container-w">
-        <div class="flex flex-col items-center lg:flex-row">
-          <img src="/assets/images/good-monr.png" alt="" />
-
-          <div class="flex flex-col items-center lg:flex-row">
-            <div
-              class="flex w-fit flex-col items-center justify-between bg-line-small bg-center bg-no-repeat"
-            >
-              <div
-                class="flex h-[107px] w-[107px] items-center justify-center rounded-full bg-orange-400 text-5xl font-extrabold text-white lg:mb-[25rem]"
-              >
-                <p>CRS</p>
-              </div>
-              <div
-                class="z-50 mt-10 block max-w-[25rem] bg-white text-center lg:hidden"
-              >
-                <p class="border-t-2 border-t-orange-400 pt-5">
-                  PMS مخفف عبارت Property Management System است که به نرم افزار
-                  مدیریت اتاق ها و امکانات در هتل ها اشاره دارد. در حوزه صنعت
-                  گردشگری و هتلداری، PMS به مجموعه ای از نرم افزار ها گفته می
-                  شود که تمامی فعالیت های مرتبط با مدیریت هتل را شامل می شود.
-                </p>
-              </div>
-            </div>
-
-            <div class="hidden h-[29rem] flex-col justify-end lg:flex">
-              <p
-                class="relative before:absolute before:-right-14 before:block before:h-full before:w-[3px] before:bg-orange-400"
-              >
-                PMS مخفف عبارت Property Management System است که به نرم افزار
-                مدیریت اتاق ها و امکانات در هتل ها اشاره دارد. در حوزه صنعت
-                گردشگری و هتلداری، PMS به مجموعه ای از نرم افزار ها گفته می شود
-                که تمامی فعالیت های مرتبط با مدیریت هتل را شامل می شود.
-              </p>
-              <ul class="mt-12 space-y-6 font-medium">
-                <div class="absolute left-0 z-10 hidden md:block">
-                  <img src="/assets/images/pattern-3.png" alt="" />
-                </div>
-                <li
-                  class="relative before:absolute before:-right-[3.8rem] before:top-[.3rem] before:block before:h-[15px] before:w-[15px] before:rounded-full before:bg-orange-400"
-                >
-                  امکان نمایش رزرو ها به صورت تقویمی با قابلیت Drag and Drop
-                </li>
-                <li
-                  class="relative before:absolute before:-right-[3.8rem] before:top-[.3rem] before:block before:h-[15px] before:w-[15px] before:rounded-full before:bg-orange-400"
-                >
-                  هماهنگی کامل بین سیستم رزرواسیون و PMS و جلوگیری از
-                  overbooking
-                </li>
-                <li
-                  class="relative before:absolute before:-right-[3.8rem] before:top-[.3rem] before:block before:h-[15px] before:w-[15px] before:rounded-full before:bg-orange-400"
-                >
-                  امکان تعریف پروموشن های تعریفی و موردی
-                </li>
-                <li
-                  class="relative before:absolute before:-right-[3.8rem] before:top-[.3rem] before:block before:h-[15px] before:w-[15px] before:rounded-full before:bg-orange-400"
-                >
-                  امان تغییر رزرو انجام شده ( کم و زیاد کردن مدت اقامت، تعداد
-                  نفرات، امکانات و وعده های غذایی و...)
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="m-auto flex h-full max-h-[28rem] w-[1px] flex-col bg-line-small bg-center bg-no-repeat font-medium lg:hidden"
-        >
-          <div class="mt-12 w-[48vw]">
-            <div class="mr-[1.4rem]">
-              <p
-                class="relative before:absolute before:-right-[1.8rem] before:top-[.3rem] before:block before:h-[15px] before:w-[15px] before:rounded-full before:bg-orange-400"
-              >
-                امکان تعریف پروموشن های تعریفی و موردی
-              </p>
-            </div>
-          </div>
-          <div class="mr-10 mt-10 w-[48vw] self-end">
-            <div>
-              <p
-                class="relative pl-[1.1rem] text-left before:absolute before:-left-[.5rem] before:top-[.3rem] before:block before:h-[15px] before:w-[15px] before:rounded-full before:bg-orange-400"
-              >
-                هماهنگی کامل بین سیستم رزرواسیون و PMS و جلوگیری از overbooking
-              </p>
-            </div>
-          </div>
-          <div class="mt-10 w-[48vw]">
-            <div class="mr-[1.4rem]">
-              <p
-                class="relative pr-[.6rem] before:absolute before:-right-[1.8rem] before:top-[.3rem] before:block before:h-[15px] before:w-[15px] before:rounded-full before:bg-orange-400"
-              >
-                امان تغییر رزرو انجام شده ( کم و زیاد کردن مدت اقامت، تعداد
-                نفرات، امکانات و وعده های غذایی و...)
-              </p>
-            </div>
-          </div>
-          <div class="mt-10 w-[48vw] self-end">
-            <div class="text-left">
-              <p
-                class="relative pl-[1.1rem] before:absolute before:-left-[.5rem] before:top-[.3rem] before:block before:h-[15px] before:w-[15px] before:rounded-full before:bg-orange-400"
-              >
-                امکان تعریف پروموشن های تعریفی و موردی
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div
-        class="container-w bg-green-demo high-sm:rounded-full !mx-4 !my-40 flex flex-col items-center justify-between rounded-2xl bg-[#EAF7F0] bg-cover bg-center bg-no-repeat md:flex-row"
-      >
-        <div
-          class="flex flex-col items-center gap-3 p-3 font-medium sm:flex-row"
-        >
-          <img class="p-3" width="100" src="/assets/images/gr.png" alt="" />
-          <p>
-            راهکـــار PMS ما برای کمک به هتل‌ها در افزایش نرخ اشغال، ساده‌سازی
-            عملیات <br />و ارائه یک تجربه مهمان برتر طراحی شده است.
-          </p>
-        </div>
-        <div>
           <div>
-            <button
-              class="mb-3 ml-5 flex items-center gap-2 rounded-full border border-white bg-green-600 p-1 px-2 font-bold text-white md:bg-transparent"
-            >
-              درخواست دمو<svg
-                width="30"
-                height="30"
-                viewBox="0 0 34 34"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <div>
+              <button
+                class="mb-3 ml-5 flex items-center gap-2 rounded-full border-0 border-white bg-green-600 p-1 px-2 font-bold text-white md:border md:border-solid md:border-white md:bg-transparent"
               >
-                <path
-                  opacity="0.5"
-                  d="M17.0002 31.1668C9.17591 31.1668 2.8335 24.8244 2.8335 17.0002C2.8335 9.17591 9.17591 2.8335 17.0002 2.8335C24.8244 2.8335 31.1668 9.17591 31.1668 17.0002C31.1668 24.8244 24.8244 31.1668 17.0002 31.1668Z"
-                  fill="white"
-                />
-                <path
-                  d="M18.3742 11.9993C18.4715 11.8949 18.5888 11.8112 18.7191 11.7531C18.8494 11.695 18.9901 11.6638 19.1328 11.6613C19.2755 11.6588 19.4172 11.685 19.5495 11.7385C19.6818 11.7919 19.802 11.8714 19.9028 11.9723C20.0037 12.0732 20.0833 12.1934 20.1367 12.3257C20.1902 12.458 20.2164 12.5997 20.2139 12.7424C20.2114 12.885 20.1801 13.0257 20.1221 13.1561C20.064 13.2864 19.9803 13.4037 19.8759 13.501L16.3767 17.0001L19.8759 20.4993C19.9803 20.5966 20.064 20.7139 20.1221 20.8442C20.1801 20.9745 20.2114 21.1152 20.2139 21.2579C20.2164 21.4006 20.1902 21.5423 20.1367 21.6746C20.0833 21.8069 20.0037 21.927 19.9028 22.0279C19.802 22.1288 19.6818 22.2084 19.5495 22.2618C19.4172 22.3152 19.2755 22.3415 19.1328 22.339C18.9901 22.3365 18.8494 22.3052 18.7191 22.2472C18.5888 22.1891 18.4715 22.1054 18.3742 22.001L14.1242 17.751C13.9252 17.5518 13.8135 17.2817 13.8135 17.0001C13.8135 16.7186 13.9252 16.4485 14.1242 16.2493L18.3742 11.9993Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
+                درخواست دمو<svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.5"
+                    d="M17.0002 31.1668C9.17591 31.1668 2.8335 24.8244 2.8335 17.0002C2.8335 9.17591 9.17591 2.8335 17.0002 2.8335C24.8244 2.8335 31.1668 9.17591 31.1668 17.0002C31.1668 24.8244 24.8244 31.1668 17.0002 31.1668Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M18.3742 11.9993C18.4715 11.8949 18.5888 11.8112 18.7191 11.7531C18.8494 11.695 18.9901 11.6638 19.1328 11.6613C19.2755 11.6588 19.4172 11.685 19.5495 11.7385C19.6818 11.7919 19.802 11.8714 19.9028 11.9723C20.0037 12.0732 20.0833 12.1934 20.1367 12.3257C20.1902 12.458 20.2164 12.5997 20.2139 12.7424C20.2114 12.885 20.1801 13.0257 20.1221 13.1561C20.064 13.2864 19.9803 13.4037 19.8759 13.501L16.3767 17.0001L19.8759 20.4993C19.9803 20.5966 20.064 20.7139 20.1221 20.8442C20.1801 20.9745 20.2114 21.1152 20.2139 21.2579C20.2164 21.4006 20.1902 21.5423 20.1367 21.6746C20.0833 21.8069 20.0037 21.927 19.9028 22.0279C19.802 22.1288 19.6818 22.2084 19.5495 22.2618C19.4172 22.3152 19.2755 22.3415 19.1328 22.339C18.9901 22.3365 18.8494 22.3052 18.7191 22.2472C18.5888 22.1891 18.4715 22.1054 18.3742 22.001L14.1242 17.751C13.9252 17.5518 13.8135 17.2817 13.8135 17.0001C13.8135 16.7186 13.9252 16.4485 14.1242 16.2493L18.3742 11.9993Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -838,7 +649,7 @@
     </main>
     <footer class="mx-4 space-y-10 border-t pt-10">
       <div
-        class="container-w mx-3 flex flex-col items-center justify-between rounded-full bg-request-form bg-cover bg-center bg-no-repeat mid-sm:flex-row"
+        class="container-w mx mx-3 flex flex-col items-center justify-between rounded-full bg-request-form bg-cover bg-center bg-no-repeat mid-sm:flex-row"
       >
         <div class="flex items-center gap-3 p-3">
           <svg

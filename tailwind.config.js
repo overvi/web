@@ -16,6 +16,8 @@ export default {
         "green-demo": "url('./assets/images/green-demo.png')",
         line: "url('./assets/images/line.svg')",
         "line-small": "url('./assets/images/line-small.svg')",
+        "prices-bg": "url('./assets/images/prices-bg.png')",
+        "prices-bg-small": "url('./assets/images/bg-price-small.png')",
       },
       colors: {
         "orange-400": "#F9B233",

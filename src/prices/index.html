@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solutions</title>
+    <title>Prices</title>
     <link rel="stylesheet" href="/style.css" />
+    <script defer type="module" src="/assets/ts/prices.ts"></script>
   </head>
   <body>
     <header class="space-y-5">
@@ -60,14 +61,14 @@
             >
           </li>
           <li
-            class="active relative after:absolute after:left-0 after:right-0 after:top-5 after:m-auto after:block after:w-fit after:content-[url('./assets/images/Selected.svg')]"
+            class="text-gray-800 transition-all duration-700 hover:brightness-50"
           >
             <a href="solutions.html">راهکار ها</a>
           </li>
           <li
-            class="text-gray-800 transition-all duration-700 hover:brightness-50"
+            class="active relative after:absolute after:left-0 after:right-0 after:top-5 after:m-auto after:block after:w-fit after:content-[url('./assets/images/Selected.svg')]"
           >
-            <a href="">قیمت ها</a>
+            <a href="../prices/">قیمت ها</a>
           </li>
           <li
             class="text-gray-800 transition-all duration-700 hover:brightness-50"
@@ -132,14 +133,10 @@
                     <li
                       class="text-gray-800 transition-all duration-700 hover:brightness-50"
                     >
-                      <a
-                        class="active relative text-black after:absolute after:left-0 after:right-0 after:m-auto after:block after:w-fit after:content-[url('./assets/images/Selected.svg')]"
-                        href="solutions.html"
-                        >راهکار ها</a
-                      >
+                      <a href="solutions.html">راهکار ها</a>
                     </li>
                     <li
-                      class="text-gray-800 transition-all duration-700 hover:brightness-50"
+                      class="active relative text-black after:absolute after:left-0 after:right-0 after:m-auto after:block after:w-fit after:content-[url('./assets/images/Selected.svg')]"
                     >
                       <a href="">قیمت ها</a>
                     </li>
@@ -253,459 +250,380 @@
       </div>
     </header>
     <main>
-      <div class="m-auto my-28 w-fit">
-        <img class="hidden md:block" src="/assets/images/Header.png" alt="" />
-        <img
-          src="/assets/images/header-mobile.png"
-          class="block md:hidden"
-          alt=""
-        />
-      </div>
-      <section
-        class="container-w my-36 grid grid-cols-1 gap-7 *:w-full md:grid-cols-2"
-      >
-        <div
-          class="flex rounded-3xl border border-orange-400 bg-white lg:rounded-l-[18rem] lg:rounded-r-[100vw] lg:border-0 lg:bg-orange-400"
-        >
-          <svg
-            class="mr-4 hidden lg:block"
-            width="156"
-            height="159"
-            viewBox="0 0 126 129"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-              stroke="#FBCA72"
-              stroke-width="20"
-              stroke-linecap="round"
+      <section class="my-24 space-y-14">
+        <div class="m-auto w-fit items-center space-y-4">
+          <div class="m-auto flex w-fit flex-col items-center sm:flex-row">
+            <img
+              class="mb-2 w-[100px] high-sm:mb-0 high-sm:w-[150px] md:w-[200px]"
+              src="/assets/images/mangotles.png"
+              alt=""
             />
-          </svg>
-          <div class="w-full space-y-4 p-6 font-medium">
-            <h2 class="text-3xl font-extrabold">هتل ها</h2>
-            <p>
-              راهکار PMS ما مجموعه کاملی از ابزارها را برای مدیریت عملیات هتل در
-              اختیار هتل‌ها قرار می‌دهد.
-            </p>
-            <div class="mt-4 flex flex-col justify-between sm:flex-row">
-              <ul class="font-bold">
-                <li
-                  class="flex items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-green-600 before:content-['\2022']"
-                >
-                  سیستم رزرو مرکزی (CRS)
-                </li>
-                <li
-                  class="flex h-[2rem] items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-green-600 before:content-['\2022']"
-                >
-                  سیستم مدیریت دارایی (PMS)
-                </li>
-                <li
-                  class="flex items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-green-600 before:content-['\2022']"
-                >
-                  سیستم مدیریت کانال
-                </li>
-              </ul>
-              <div class="flex items-center gap-2 self-end">
-                <button
-                  class="text-nowrap rounded-full bg-gray-100 p-2 px-4 font-semibold"
-                >
-                  بیشتر بخوانید
-                </button>
-                <button>
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 46 46"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="23" cy="23" r="23" fill="#2fac66" />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M26.5032 12.2604C26.6118 12.3535 26.7009 12.467 26.7656 12.5946C26.8303 12.7221 26.8692 12.8612 26.8801 13.0037C26.8911 13.1463 26.8738 13.2897 26.8293 13.4256C26.7847 13.5615 26.7139 13.6873 26.6207 13.7958L18.5215 23.2462L26.6207 32.6965C26.7193 32.8041 26.7952 32.9305 26.8439 33.068C26.8927 33.2055 26.9133 33.3514 26.9045 33.4971C26.8957 33.6427 26.8577 33.7851 26.7928 33.9158C26.7279 34.0465 26.6374 34.1628 26.5266 34.2578C26.4158 34.3528 26.2871 34.4245 26.1481 34.4688C26.009 34.513 25.8625 34.5288 25.7172 34.5153C25.5719 34.5018 25.4309 34.4592 25.3024 34.3901C25.1739 34.321 25.0606 34.2267 24.9692 34.1129L16.2619 23.9544C16.0929 23.7571 16 23.5059 16 23.2462C16 22.9864 16.0929 22.7352 16.2619 22.538L24.9692 12.3794C25.1572 12.1605 25.4243 12.0252 25.7119 12.0032C25.9995 11.9811 26.2841 12.0742 26.5032 12.2619V12.2604Z"
-                      fill="white"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
+            <h1 class="text-4xl font-extrabold high-sm:text-5xl md:text-6xl">
+              یک پیشــرفت شیریــن
+            </h1>
           </div>
+          <p class="m-auto max-w-[63ch] px-2 text-center text-lg md:px-0">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی.
+          </p>
         </div>
-        <div
-          class="flex rounded-3xl border bg-white lg:rounded-l-[100vw] lg:rounded-r-[18rem] lg:border-0 lg:bg-gray-50"
-        >
-          <div class="w-full space-y-4 p-6 font-medium">
-            <h2 class="text-3xl font-extrabold">مدیریت هتل های زنجیره ای</h2>
-            <p>
-              راهکار مدیریت هتل‌های زنجیره‌ای ما یک پلتفرم مرکزی برای مدیریت
-              چندین هتل در یک سازمان واحد ارائه می‌کند.
-            </p>
-            <div class="mt-4 flex flex-col justify-between sm:flex-row">
-              <ul class="font-bold">
-                <li
-                  class="flex items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  گزارش گیری تلفیقی
-                </li>
-                <li
-                  class="flex h-[2rem] items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  جریان کاری استاندارد
-                </li>
-                <li
-                  class="flex items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  مدیریت داده های متمرکز
-                </li>
-              </ul>
-              <div class="flex items-center gap-2 self-end">
-                <button class="rounded-full bg-white p-2 px-4 font-semibold">
-                  بیشتر بخوانید
-                </button>
-                <button>
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 46 46"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="23" cy="23" r="23" fill="orange" />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M26.5032 12.2604C26.6118 12.3535 26.7009 12.467 26.7656 12.5946C26.8303 12.7221 26.8692 12.8612 26.8801 13.0037C26.8911 13.1463 26.8738 13.2897 26.8293 13.4256C26.7847 13.5615 26.7139 13.6873 26.6207 13.7958L18.5215 23.2462L26.6207 32.6965C26.7193 32.8041 26.7952 32.9305 26.8439 33.068C26.8927 33.2055 26.9133 33.3514 26.9045 33.4971C26.8957 33.6427 26.8577 33.7851 26.7928 33.9158C26.7279 34.0465 26.6374 34.1628 26.5266 34.2578C26.4158 34.3528 26.2871 34.4245 26.1481 34.4688C26.009 34.513 25.8625 34.5288 25.7172 34.5153C25.5719 34.5018 25.4309 34.4592 25.3024 34.3901C25.1739 34.321 25.0606 34.2267 24.9692 34.1129L16.2619 23.9544C16.0929 23.7571 16 23.5059 16 23.2462C16 22.9864 16.0929 22.7352 16.2619 22.538L24.9692 12.3794C25.1572 12.1605 25.4243 12.0252 25.7119 12.0032C25.9995 11.9811 26.2841 12.0742 26.5032 12.2619V12.2604Z"
-                      fill="white"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <svg
-            class="ml-[1rem] hidden rotate-[265deg] lg:block"
-            width="176"
-            height="179"
-            viewBox="0 0 126 129"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-              stroke="white"
-              stroke-width="20"
-              stroke-linecap="round"
-            />
-          </svg>
-        </div>
-        <div
-          class="flex rounded-3xl border bg-white lg:rounded-l-[18rem] lg:rounded-r-[100vw] lg:border-0 lg:bg-gray-50"
-        >
-          <svg
-            class="mr-8 hidden rotate-[85deg] self-end lg:block"
-            width="210"
-            height="199"
-            viewBox="0 0 126 129"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-              stroke="white"
-              stroke-width="20"
-              stroke-linecap="round"
-            />
-          </svg>
-          <div class="space-y-4 p-6 font-medium">
-            <h2 class="text-3xl font-extrabold">API , OTA, CRS</h2>
-            <p>
-              راهکار CRS ما به آژانس‌های مسافرتی آنلاین (OTA) یک موتور رزرو در
-              زمان واقعی ارائه می‌کند تا مسافران را به هتل‌های سراسر جهان متصل
-              کند.
-            </p>
-            <div class="mt-4 flex flex-col justify-between sm:flex-row">
-              <ul class="font-bold">
-                <li
-                  class="flex items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  موجودی و قیمت در زمان واقعی
-                </li>
-                <li
-                  class="flex h-[2rem] items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  پردازش امن
-                </li>
-                <li
-                  class="flex items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  پشتیبانی چند زبانه
-                </li>
-              </ul>
-              <div class="flex items-center gap-2 self-end">
-                <button
-                  class="text-nowrap rounded-full bg-white p-2 px-4 font-semibold"
-                >
-                  بیشتر بخوانید
-                </button>
-                <button>
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 46 46"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="23" cy="23" r="23" fill="orange" />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M26.5032 12.2604C26.6118 12.3535 26.7009 12.467 26.7656 12.5946C26.8303 12.7221 26.8692 12.8612 26.8801 13.0037C26.8911 13.1463 26.8738 13.2897 26.8293 13.4256C26.7847 13.5615 26.7139 13.6873 26.6207 13.7958L18.5215 23.2462L26.6207 32.6965C26.7193 32.8041 26.7952 32.9305 26.8439 33.068C26.8927 33.2055 26.9133 33.3514 26.9045 33.4971C26.8957 33.6427 26.8577 33.7851 26.7928 33.9158C26.7279 34.0465 26.6374 34.1628 26.5266 34.2578C26.4158 34.3528 26.2871 34.4245 26.1481 34.4688C26.009 34.513 25.8625 34.5288 25.7172 34.5153C25.5719 34.5018 25.4309 34.4592 25.3024 34.3901C25.1739 34.321 25.0606 34.2267 24.9692 34.1129L16.2619 23.9544C16.0929 23.7571 16 23.5059 16 23.2462C16 22.9864 16.0929 22.7352 16.2619 22.538L24.9692 12.3794C25.1572 12.1605 25.4243 12.0252 25.7119 12.0032C25.9995 11.9811 26.2841 12.0742 26.5032 12.2619V12.2604Z"
-                      fill="white"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="flex rounded-3xl border bg-white lg:rounded-l-[100vw] lg:rounded-r-[18rem] lg:border-0 lg:bg-gray-50"
-        >
-          <div class="w-full space-y-4 p-6 font-medium">
-            <h2 class="text-3xl font-extrabold">
-              پنل B2B برای آژانس‌های مسافرتی
-            </h2>
-            <p>
-              پنل B2B ما یک پلتفرم مرکزی برای مدیریت رزرو، فاکتور و کمیسیون
-              آژانس‌های مسافرتی ارائه می‌کند.
-            </p>
-            <div class="mt-4 flex flex-col justify-between sm:flex-row">
-              <ul class="font-bold">
-                <li
-                  class="flex items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  رزرو و مدیریت در زمان واقعی
-                </li>
-                <li
-                  class="flex h-[2rem] items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  پیگیری فاکتور کمیسیون
-                </li>
-                <li
-                  class="flex items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  تحلیل عملکرد
-                </li>
-              </ul>
-              <div class="flex items-center gap-2 self-end">
-                <button
-                  class="text-nowrap rounded-full bg-white p-2 px-4 font-semibold"
-                >
-                  بیشتر بخوانید
-                </button>
-                <button>
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 46 46"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="23" cy="23" r="23" fill="orange" />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M26.5032 12.2604C26.6118 12.3535 26.7009 12.467 26.7656 12.5946C26.8303 12.7221 26.8692 12.8612 26.8801 13.0037C26.8911 13.1463 26.8738 13.2897 26.8293 13.4256C26.7847 13.5615 26.7139 13.6873 26.6207 13.7958L18.5215 23.2462L26.6207 32.6965C26.7193 32.8041 26.7952 32.9305 26.8439 33.068C26.8927 33.2055 26.9133 33.3514 26.9045 33.4971C26.8957 33.6427 26.8577 33.7851 26.7928 33.9158C26.7279 34.0465 26.6374 34.1628 26.5266 34.2578C26.4158 34.3528 26.2871 34.4245 26.1481 34.4688C26.009 34.513 25.8625 34.5288 25.7172 34.5153C25.5719 34.5018 25.4309 34.4592 25.3024 34.3901C25.1739 34.321 25.0606 34.2267 24.9692 34.1129L16.2619 23.9544C16.0929 23.7571 16 23.5059 16 23.2462C16 22.9864 16.0929 22.7352 16.2619 22.538L24.9692 12.3794C25.1572 12.1605 25.4243 12.0252 25.7119 12.0032C25.9995 11.9811 26.2841 12.0742 26.5032 12.2619V12.2604Z"
-                      fill="white"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <svg
-            class="ml-10 hidden rotate-[174deg] self-end lg:block"
-            width="156"
-            height="159"
-            viewBox="0 0 126 129"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-              stroke="white"
-              stroke-width="20"
-              stroke-linecap="round"
-            />
-          </svg>
-        </div>
-        <div
-          class="flex rounded-3xl border bg-white lg:rounded-l-[18rem] lg:rounded-r-[100vw] lg:border-0 lg:bg-gray-50"
-        >
-          <svg
-            class="mr-4 hidden rotate-[10deg] lg:block"
-            width="210"
-            height="180"
-            viewBox="0 0 126 129"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-              stroke="white"
-              stroke-width="20"
-              stroke-linecap="round"
-            />
-          </svg>
-          <div class="space-y-4 p-6 font-medium">
-            <h2 class="text-3xl font-extrabold">
-              API برای ادغام و سفارشی‌سازی
-            </h2>
-            <p>
-              API ما به هتل‌ها و آژانس‌های مسافرتی ابزارهایی را ارائه می‌دهد که
-              برای ادغام راهکارهای PMS و CRS ما در وب‌سایت‌ها و برنامه‌های خود
-              نیاز دارند.
-            </p>
-            <div class="mt-4 flex flex-col justify-between sm:flex-row">
-              <ul class="font-bold">
-                <li
-                  class="flex items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  تبادل داده در زمان واقعی
-                </li>
-                <li
-                  class="flex h-[2rem] items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  تجربه رزرو سفارشی
-                </li>
-                <li
-                  class="flex items-center gap-[3px] before:mb-[1px] before:block before:rounded-full before:text-5xl before:text-orange-400 before:content-['\2022']"
-                >
-                  تضمیم گیری مبتنی بر داده
-                </li>
-              </ul>
-              <div class="flex items-center gap-2 self-end">
-                <button class="rounded-full bg-white p-2 px-4 font-semibold">
-                  بیشتر بخوانید
-                </button>
-                <button>
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 46 46"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="23" cy="23" r="23" fill="orange" />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M26.5032 12.2604C26.6118 12.3535 26.7009 12.467 26.7656 12.5946C26.8303 12.7221 26.8692 12.8612 26.8801 13.0037C26.8911 13.1463 26.8738 13.2897 26.8293 13.4256C26.7847 13.5615 26.7139 13.6873 26.6207 13.7958L18.5215 23.2462L26.6207 32.6965C26.7193 32.8041 26.7952 32.9305 26.8439 33.068C26.8927 33.2055 26.9133 33.3514 26.9045 33.4971C26.8957 33.6427 26.8577 33.7851 26.7928 33.9158C26.7279 34.0465 26.6374 34.1628 26.5266 34.2578C26.4158 34.3528 26.2871 34.4245 26.1481 34.4688C26.009 34.513 25.8625 34.5288 25.7172 34.5153C25.5719 34.5018 25.4309 34.4592 25.3024 34.3901C25.1739 34.321 25.0606 34.2267 24.9692 34.1129L16.2619 23.9544C16.0929 23.7571 16 23.5059 16 23.2462C16 22.9864 16.0929 22.7352 16.2619 22.538L24.9692 12.3794C25.1572 12.1605 25.4243 12.0252 25.7119 12.0032C25.9995 11.9811 26.2841 12.0742 26.5032 12.2619V12.2604Z"
-                      fill="white"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="rounded-b-[100vw] rounded-t-[5rem] border-0 bg-gray-50 md:rounded-b-[10vw] lg:rounded-l-[100vw] lg:rounded-r-[18rem] lg:border lg:bg-white"
-        >
-          <div
-            class="space-y-4 py-6 pb-12 font-medium mid-sm:pb-[11rem] md:pb-0 lg:pb-0"
-          >
-            <div
-              class="w-fit rounded-l-[100vw] bg-white p-3 px-6 lg:bg-orange-400"
-            >
-              <p class="text-2xl font-bold">سوالی دارید؟!</p>
-            </div>
-            <div class="space-y-12 p-8 text-lg font-normal lg:text-xl">
-              <p>
-                اگر در مورد پلن های ما سوالی دارید، می توانید <br />با پشتیبانی
-                ما تماس بگیرید.
-              </p>
+        <div class="container-w">
+          <form action="" class="flex flex-col justify-between md:flex-row">
+            <div class="m-auto md:m-0">
               <div
-                class="relative mx-auto flex w-fit flex-col items-center gap-8 sm:flex-row md:flex-row lg:mx-0 lg:w-auto lg:gap-12"
+                class="splide splide-types font-medium"
+                role="group"
+                aria-label="spl"
               >
-                <div class="flex items-center gap-2">
-                  <svg
-                    width="35"
-                    height="35"
-                    viewBox="0 0 42 38"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      opacity="0.4"
-                      d="M41.9748 27.2348C41.9748 33.0659 37.2896 37.7893 31.4541 37.8102H31.4332H10.7056C4.89096 37.8102 0.143066 33.1077 0.143066 27.2766V27.2557C0.143066 27.2557 0.155616 18.0054 0.172349 13.353C0.17444 12.4794 1.1784 11.9903 1.86235 12.5337C6.83195 16.4734 15.7191 23.6567 15.83 23.7508C17.315 24.94 19.1974 25.6109 21.1217 25.6109C23.0459 25.6109 24.9283 24.94 26.4134 23.7278C26.5242 23.6546 35.2127 16.6866 40.2576 12.6821C40.9436 12.1366 41.9518 12.6257 41.9538 13.4972C41.9748 18.114 41.9748 27.2348 41.9748 27.2348Z"
-                      fill="#F9B233"
-                    />
-                    <path
-                      d="M40.8791 5.77763C39.0678 2.36675 35.5037 0.188965 31.5799 0.188965H10.7059C6.78208 0.188965 3.21802 2.36675 1.40671 5.77763C1.00094 6.54048 1.19337 7.49143 1.86895 8.03065L17.399 20.4432C18.4866 21.321 19.8043 21.7578 21.122 21.7578C21.1304 21.7578 21.1366 21.7578 21.1429 21.7578C21.1492 21.7578 21.1575 21.7578 21.1638 21.7578C22.4815 21.7578 23.7992 21.321 24.8868 20.4432L40.4169 8.03065C41.0924 7.49143 41.2849 6.54048 40.8791 5.77763Z"
-                      fill="#F9B233"
-                    />
-                  </svg>
-                  <div>
-                    <p class="font-extrabold">ایمیل</p>
-                    <p>john@doe.com</p>
-                  </div>
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div>
+                        <input
+                          name="hotelType"
+                          type="radio"
+                          class="peer hidden"
+                          id="five-three"
+                        />
+                        <label
+                          for="five-three"
+                          class="block cursor-pointer rounded-full border border-orange-400 p-1 px-3 peer-checked:bg-orange-400 peer-checked:text-white"
+                        >
+                          <p>هتل های سه تا پنج ستاره</p>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div>
+                        <input
+                          name="hotelType"
+                          type="radio"
+                          class="peer hidden"
+                          id="aparteman"
+                        />
+                        <label
+                          for="aparteman"
+                          class="block cursor-pointer rounded-full border border-orange-400 p-1 px-3 peer-checked:bg-orange-400 peer-checked:text-white"
+                        >
+                          <p>هتل آپارتمان</p>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div>
+                        <input
+                          name="hotelType"
+                          type="radio"
+                          class="peer hidden"
+                          id="stay"
+                        />
+                        <label
+                          for="stay"
+                          class="block cursor-pointer rounded-full border border-orange-400 p-1 px-3 peer-checked:bg-orange-400 peer-checked:text-white"
+                        >
+                          <p>مهمان پذیر و اقامتگاه</p>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div>
+                        <input
+                          name="hotelType"
+                          type="radio"
+                          class="peer hidden"
+                          id="ecotourism"
+                        />
+                        <label
+                          for="ecotourism"
+                          class="block cursor-pointer rounded-full border border-orange-400 p-1 px-3 peer-checked:bg-orange-400 peer-checked:text-white"
+                        >
+                          <p>بوم گردی</p>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <div class="flex items-center gap-2">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 38 38"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g opacity="0.4">
-                      <path
-                        d="M23.0988 6.69067C22.1631 6.52207 21.3037 7.1045 21.1256 7.9954C20.9475 8.88629 21.5465 9.75611 22.4567 9.93046C25.1973 10.4516 27.3133 12.5208 27.8497 15.203C28.0024 15.9751 28.6993 16.5384 29.5019 16.5384C29.6095 16.5384 29.7172 16.5288 29.8268 16.5097C30.7371 16.3315 31.3361 15.4636 31.1579 14.5708C30.3573 10.5646 27.1959 7.47044 23.0988 6.69067Z"
-                        fill="#F9B233"
-                      />
-                      <path
-                        d="M22.9726 0.0152031C22.5341 -0.0461058 22.0937 0.0803437 21.7433 0.352402C21.3831 0.628291 21.158 1.0268 21.109 1.4732C21.0053 2.37559 21.6728 3.19177 22.5967 3.29331C28.9685 3.98687 33.921 8.82835 34.6375 15.0627C34.7334 15.898 35.4518 16.5284 36.3092 16.5284C36.3738 16.5284 36.4364 16.5245 36.501 16.5169C36.9493 16.469 37.3487 16.2525 37.6305 15.9076C37.9105 15.5627 38.0377 15.1336 37.9868 14.6948C37.0942 6.91628 30.9221 0.879274 22.9726 0.0152031Z"
-                        fill="#F9B233"
-                      />
-                    </g>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M17.7526 20.6925C25.5935 28.3383 27.3723 19.4929 32.3646 24.359C37.1776 29.0522 39.9438 29.9925 33.8458 35.9388C33.082 36.5375 28.2289 43.741 11.1736 27.1099C-5.88393 10.4768 1.49696 5.73829 2.11098 4.99346C8.22373 -0.969282 9.17114 1.74461 13.9841 6.43785C18.9764 11.306 9.91176 13.0467 17.7526 20.6925Z"
-                      fill="#F9B233"
-                    />
-                  </svg>
-
-                  <div>
-                    <p class="font-extrabold">تلفن پشتیبانی</p>
-                    <p class="text-xl">
-                      ۰۲۱-<span class="text-orange-400">۸۸۷۲۴۲۱۲</span>
-                    </p>
-                  </div>
-                </div>
-                <svg
-                  class="hidden"
-                  width="156"
-                  height="159"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
               </div>
+            </div>
+
+            <div
+              class="-order-1 m-auto mb-16 flex w-fit gap-2 rounded-full bg-gray-100 px-1 py-2 font-medium text-white md:order-1 md:m-0 md:mb-0 md:w-auto dark:bg-gray-950"
+            >
+              <div>
+                <input
+                  name="date"
+                  checked
+                  id="monthly"
+                  class="peer hidden"
+                  type="radio"
+                />
+                <label
+                  class="cursor-pointer rounded-full p-[.3rem] px-3 transition-all duration-700 peer-checked:bg-orange-400 peer-checked:text-black"
+                  for="monthly"
+                  >سالیانه</label
+                >
+              </div>
+              <div>
+                <input
+                  name="date"
+                  id="weekly"
+                  class="peer hidden"
+                  type="radio"
+                />
+                <label
+                  class="cursor-pointer rounded-full p-[.3rem] px-3 transition-all duration-700 peer-checked:bg-orange-400 peer-checked:text-black"
+                  for="weekly"
+                  >ماهانه</label
+                >
+              </div>
+            </div>
+          </form>
+          <div
+            style="background-size: 100%"
+            class="bg-prices-bg-small md:bg-prices-bg mt-20 min-h-[15rem] rounded-3xl bg-center bg-no-repeat"
+          >
+            <div class="max-w-[35rem] space-y-8 px-3 py-6">
+              <h1 class="text-3xl font-extrabold">هتل های 3 تا 5 ستاره</h1>
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی.
+              </p>
             </div>
           </div>
         </div>
       </section>
+      <section class="splide container-w splide-prices" aria-label="Prices">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="rounded-3xl border border-black p-3">
+                <div>
+                  <h1 class="mt-16 text-xl font-extrabold">حرفه ای</h1>
+                  <p class="text-gray-500">
+                    بهترین برای هتل های بیش از 20 اتاق
+                  </p>
+                </div>
+                <div
+                  class="my-4 flex items-center gap-2 border-b border-b-[#C38C2B] pb-3"
+                >
+                  <p class="text-2xl text-gray-500">سالیانه/</p>
+                  <p class="text-4xl font-extrabold sm:text-5xl">۳,۰۰۰,۰۰۰</p>
+                  <p class="font-extrabold leading-4">تــــو <br />مان</p>
+                </div>
+                <div>
+                  <h2 class="my-4 text-xl font-bold">امکانات</h2>
+                  <ul class="space-y-3 font-medium">
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      قیمت گذاری اتاق بر اساس استانداردهای بین المللی
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      اتصال به سیستم های مالی و حسابداری
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      مدیریت درآمد بر پایـه هوش مصنوعی
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      قیمت گذاری اتاق بر اساس استانداردهای بین المللی
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      اتصال به سیستم های مالی و حسابداری
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      مدیریت درآمد بر پایـه هوش مصنوعی
+                    </li>
+                  </ul>
+                  <div class="mt-8 px-10">
+                    <button
+                      class="w-full rounded-full bg-gray-300 p-3 py-2 text-3xl font-bold text-white"
+                    >
+                      شروع کنید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="relative rounded-3xl border-black bg-orange-400 p-3">
+                <div
+                  class="absolute left-0 top-10 rounded-r-full bg-black p-2 px-4 font-medium text-white"
+                >
+                  <p>پیشنهادی</p>
+                </div>
+                <div>
+                  <h1 class="mt-16 text-xl font-extrabold">حرفه ای</h1>
+                  <p class="text-black">بهترین برای هتل های بیش از 20 اتاق</p>
+                </div>
+                <div
+                  class="my-4 flex items-center gap-2 border-b border-b-[#C38C2B] pb-3"
+                >
+                  <p class="text-2xl text-black">سالیانه/</p>
+                  <p class="text-4xl font-extrabold sm:text-5xl">۳,۰۰۰,۰۰۰</p>
+                  <p class="font-extrabold leading-4">تــــو <br />مان</p>
+                </div>
+                <div>
+                  <h2 class="my-4 text-xl font-bold">امکانات</h2>
+                  <ul class="space-y-3 font-medium">
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:fill-red-500 after:content-[url('./assets/images/thick-ul-white.svg')]"
+                    >
+                      قیمت گذاری اتاق بر اساس استانداردهای بین المللی
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul-white.svg')]"
+                    >
+                      اتصال به سیستم های مالی و حسابداری
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul-white.svg')]"
+                    >
+                      مدیریت درآمد بر پایـه هوش مصنوعی
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul-white.svg')]"
+                    >
+                      قیمت گذاری اتاق بر اساس استانداردهای بین المللی
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul-white.svg')]"
+                    >
+                      اتصال به سیستم های مالی و حسابداری
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul-white.svg')]"
+                    >
+                      مدیریت درآمد بر پایـه هوش مصنوعی
+                    </li>
+                  </ul>
+                  <div class="mt-8 px-10">
+                    <button
+                      class="w-full rounded-full bg-white p-3 py-2 text-3xl font-bold text-black"
+                    >
+                      شروع کنید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="rounded-3xl border border-black p-3">
+                <div>
+                  <h1 class="mt-16 text-xl font-extrabold">حرفه ای</h1>
+                  <p class="text-gray-500">
+                    بهترین برای هتل های بیش از 20 اتاق
+                  </p>
+                </div>
+                <div
+                  class="my-4 flex items-center gap-2 border-b border-b-[#C38C2B] pb-3"
+                >
+                  <p class="text-2xl text-gray-500">سالیانه/</p>
+                  <p class="text-4xl font-extrabold sm:text-5xl">۳,۰۰۰,۰۰۰</p>
+                  <p class="font-extrabold leading-4">تــــو <br />مان</p>
+                </div>
+                <div>
+                  <h2 class="my-4 text-xl font-bold">امکانات</h2>
+                  <ul class="space-y-3 font-medium">
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      قیمت گذاری اتاق بر اساس استانداردهای بین المللی
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      اتصال به سیستم های مالی و حسابداری
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      مدیریت درآمد بر پایـه هوش مصنوعی
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      قیمت گذاری اتاق بر اساس استانداردهای بین المللی
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      اتصال به سیستم های مالی و حسابداری
+                    </li>
+                    <li
+                      class="relative flex items-center gap-3 after:right-0 after:-order-1 after:block after:h-[2.5rem] after:w-fit after:content-[url('./assets/images/thick-ul.svg')]"
+                    >
+                      مدیریت درآمد بر پایـه هوش مصنوعی
+                    </li>
+                  </ul>
+                  <div class="mt-8 px-10">
+                    <button
+                      class="w-full rounded-full bg-gray-300 p-3 py-2 text-3xl font-bold text-white"
+                    >
+                      شروع کنید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div
+            class="splide__arrows m-auto mt-6 flex w-fit !flex-row gap-5 md:hidden"
+          >
+            <button class="splide__arrow splide__arrow--prev !bg-transparent">
+              <svg
+                width="50"
+                height="50"
+                class="rotate-180"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.5"
+                  d="M32.0002 58.6663C17.2722 58.6663 5.3335 46.7277 5.3335 31.9997C5.3335 17.2717 17.2722 5.33301 32.0002 5.33301C46.7282 5.33301 58.6668 17.2717 58.6668 31.9997C58.6668 46.7277 46.7282 58.6663 32.0002 58.6663Z"
+                  fill="orange"
+                />
+                <path
+                  d="M34.5849 22.6366C34.768 22.4401 34.9888 22.2825 35.2341 22.1731C35.4795 22.0638 35.7443 22.005 36.0128 22.0003C36.2814 21.9956 36.5481 22.045 36.7972 22.1456C37.0462 22.2462 37.2724 22.3959 37.4623 22.5858C37.6523 22.7757 37.802 23.0019 37.9026 23.251C38.0032 23.5 38.0526 23.7667 38.0478 24.0353C38.0431 24.3038 37.9843 24.5687 37.875 24.814C37.7657 25.0593 37.6081 25.2801 37.4116 25.4632L30.8249 32.0499L37.4116 38.6366C37.6081 38.8197 37.7657 39.0405 37.875 39.2858C37.9843 39.5311 38.0431 39.796 38.0478 40.0645C38.0526 40.333 38.0032 40.5998 37.9026 40.8488C37.802 41.0979 37.6523 41.3241 37.4623 41.514C37.2724 41.7039 37.0462 41.8536 36.7972 41.9542C36.5481 42.0548 36.2814 42.1042 36.0128 42.0995C35.7443 42.0947 35.4795 42.036 35.2341 41.9266C34.9888 41.8173 34.768 41.6597 34.5849 41.4632L26.5849 33.4632C26.2104 33.0882 26 32.5799 26 32.0499C26 31.5199 26.2104 31.0116 26.5849 30.6366L34.5849 22.6366Z"
+                  fill="orange"
+                />
+              </svg>
+            </button>
+            <button class="splide__arrow splide__arrow--next !bg-transparent">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.5"
+                  d="M32.0002 58.6663C17.2722 58.6663 5.3335 46.7277 5.3335 31.9997C5.3335 17.2717 17.2722 5.33301 32.0002 5.33301C46.7282 5.33301 58.6668 17.2717 58.6668 31.9997C58.6668 46.7277 46.7282 58.6663 32.0002 58.6663Z"
+                  fill="orange"
+                />
+                <path
+                  d="M34.5849 22.6366C34.768 22.4401 34.9888 22.2825 35.2341 22.1731C35.4795 22.0638 35.7443 22.005 36.0128 22.0003C36.2814 21.9956 36.5481 22.045 36.7972 22.1456C37.0462 22.2462 37.2724 22.3959 37.4623 22.5858C37.6523 22.7757 37.802 23.0019 37.9026 23.251C38.0032 23.5 38.0526 23.7667 38.0478 24.0353C38.0431 24.3038 37.9843 24.5687 37.875 24.814C37.7657 25.0593 37.6081 25.2801 37.4116 25.4632L30.8249 32.0499L37.4116 38.6366C37.6081 38.8197 37.7657 39.0405 37.875 39.2858C37.9843 39.5311 38.0431 39.796 38.0478 40.0645C38.0526 40.333 38.0032 40.5998 37.9026 40.8488C37.802 41.0979 37.6523 41.3241 37.4623 41.514C37.2724 41.7039 37.0462 41.8536 36.7972 41.9542C36.5481 42.0548 36.2814 42.1042 36.0128 42.0995C35.7443 42.0947 35.4795 42.036 35.2341 41.9266C34.9888 41.8173 34.768 41.6597 34.5849 41.4632L26.5849 33.4632C26.2104 33.0882 26 32.5799 26 32.0499C26 31.5199 26.2104 31.0116 26.5849 30.6366L34.5849 22.6366Z"
+                  fill="orange"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
       <div class="m-auto my-32 w-fit max-w-[30rem] space-y-7 px-5 text-center">
         <div class="flex flex-col items-center gap-5 text-center sm:flex-row">
           <img src="/assets/images/logo-orange.png" alt="" />

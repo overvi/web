@@ -95,3 +95,24 @@
     @apply bg-green-600 text-white;
   }
 }
+
+@layer utilities {
+  .radio {
+    @apply relative mr-2 inline-block size-4 rounded-[50%] border-solid p-[9px] outline outline-1 outline-gray-300 content-none after:absolute after:left-[50%] after:top-[50%] after:size-[14px] after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-[50%] after:bg-orange-400 after:opacity-0 after:transition-all;
+  }
+
+  .radio-hidden:checked + .radio::after {
+    @apply opacity-100;
+  }
+  .radio-hidden:checked + .radio {
+    @apply outline-2 outline-orange-400;
+  }
+
+  .radio-parent:has(.radio-hidden:checked) {
+    @apply w-fit rounded-full bg-[#FEF7EB] p-2 pl-8 font-medium;
+  }
+
+  .active-pagination {
+    @apply border-orange-400 text-orange-400;
+  }
+}

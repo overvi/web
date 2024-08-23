@@ -18,6 +18,8 @@ export default {
         "line-small": "url('./assets/images/line-small.svg')",
         "prices-bg": "url('./assets/images/prices-bg.png')",
         "prices-bg-small": "url('./assets/images/bg-price-small.png')",
+        articles: "url('./assets/images/articles-bg.png')",
+        "article-mobile": "url('./assets/images/mobile-article-bg.png')",
       },
       colors: {
         "orange-400": "#F9B233",

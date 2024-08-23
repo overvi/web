@@ -1,4 +1,5 @@
 import "@ts/nav";
+import articleImage from "/assets/images/articles.png";
 
 const paginationNumbers = document.querySelectorAll(".pagination-number");
 const prevPagination = document.querySelector(".prev-article-page");
@@ -42,43 +43,43 @@ let currentPage = 1;
 
 const articles = [
   {
-    img: "/assets/images/articles.png",
+    img: articleImage,
     description: "تخفیف حداکثری هتل های شیراز بfsdه مناسبت روز شیراز ",
   },
   {
-    img: "/assets/images/articles.png",
+    img: articleImage,
     description: "تخفیف حداکثffdaf<br/>sdadsfdasfdas",
   },
   {
-    img: "/assets/images/articles.png",
+    img: articleImage,
     description: "تfsdafdsخفیف حداکثری هتلبیسبیسشبشسی",
   },
   {
-    img: "/assets/images/articles.png",
+    img: articleImage,
     description: "تخفیف حداکثری هتل های شیراز به منfdsaاسبت روز شیراز ",
   },
   {
-    img: "/assets/images/articles.png",
+    img: articleImage,
     description: "تخفیف حداکثری هتل های شیراز به مناسبت روز شیراز ",
   },
   {
-    img: "/assets/images/articles.png",
+    img: articleImage,
     description: "تخفیف حداکثری هتل های شیراز به مناسبت روز شیراز ",
   },
   {
-    img: "/assets/images/articles.png",
+    img: articleImage,
     description: "تخفیف حداکثری هتل های شیراز به مناسبت روز شیراز ",
   },
   {
-    img: "/assets/images/articles.png",
+    img: articleImage,
     description: "تخفیف حداکثری هتل های شیراز به مناسبت روز شیراز ",
   },
   {
-    img: "/assets/images/articles.png",
+    img: articleImage,
     description: "تخفیف حداکثری هتل های شیراز به مناسبت روز شیراز ",
   },
   {
-    img: "/assets/images/articles.png",
+    img: articleImage,
     description: "تخفیف حداکثری هتل های شیراز به مناسبت روز شیراز ",
   },
 ];

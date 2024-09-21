@@ -1,3 +1,4 @@
+//@ts-ignore
 new Splide(".splide-prices", {
   perPage: 3,
   gap: "1rem",
@@ -16,6 +17,7 @@ new Splide(".splide-prices", {
   },
 }).mount();
 
+//@ts-ignore
 new Splide(".splide-types", {
   perPage: 4,
   gap: "1rem",

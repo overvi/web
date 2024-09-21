@@ -1,3 +1,4 @@
+//@ts-ignore
 new Splide(".splide-team", {
     perPage: 5,
     gap: "1rem",

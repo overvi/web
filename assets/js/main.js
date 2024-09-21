@@ -1,3 +1,4 @@
+//@ts-ignore
 new Splide(".splide-comments", {
     perPage: 3,
     gap: "1rem",
@@ -13,6 +14,7 @@ new Splide(".splide-comments", {
         },
     },
 }).mount();
+//@ts-ignore
 new Splide(".splide-articles", {
     perPage: 3,
     gap: "1rem",
@@ -30,6 +32,7 @@ new Splide(".splide-articles", {
         },
     },
 }).mount();
+//@ts-ignore
 new Splide(".splide-supports", {
     perPage: 6,
     gap: "3rem",
@@ -53,6 +56,7 @@ new Splide(".splide-supports", {
         },
     },
 }).mount();
+//@ts-ignore
 new Splide(".splide-why", {
     perPage: 4,
     gap: "1rem",

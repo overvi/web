@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var next = document.getElementById("next-step");
     var prev = document.getElementById("prev-step");
     var stepperEl = document.querySelector(".bs-stepper");
+    //@ts-ignore
     var stepper = new Stepper(stepperEl);
     next.addEventListener("click", function () {
         stepper.next();

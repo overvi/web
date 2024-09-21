@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const next = document.getElementById("next-step")!;
   const prev = document.getElementById("prev-step");
   const stepperEl = document.querySelector(".bs-stepper")!;
+  //@ts-ignore
 
   var stepper = new Stepper(stepperEl);
 

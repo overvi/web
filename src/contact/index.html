@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solutions</title>
+    <title>Articles</title>
+
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <div class="absolute left-0 -z-10 hidden md:block">
       <img class="h-[1300px]" src="/assets/images/first-pattern.png" alt="" />
     </div>
-    <header class="space-y-5">
+    <header class="mb-16 space-y-5">
       <div class="hidden border-b py-5 *:text-gray-300 sm:block">
         <div class="container-w m-auto flex items-center justify-between">
           <div class="flex gap-4 *:font-medium">
@@ -65,7 +66,7 @@
             >
           </li>
           <li
-            class="active relative after:absolute after:left-0 after:right-0 after:top-5 after:m-auto after:block after:w-fit after:content-[url('/assets/images/Selected.svg')]"
+            class="text-gray-800 transition-all duration-700 hover:brightness-50"
           >
             <a href="/solutions/">راهکار ها</a>
           </li>
@@ -80,7 +81,7 @@
             <a href="/articles/">مقالات</a>
           </li>
           <li
-            class="text-gray-800 transition-all duration-700 hover:brightness-50"
+            class="active relative after:absolute after:left-0 after:right-0 after:top-5 after:m-auto after:block after:w-fit after:content-[url('/assets/images/Selected.svg')]"
           >
             <a href="/contact/">تماس با ما</a>
           </li>
@@ -121,7 +122,7 @@
             </svg>
             <div
               style="grid-template-rows: 0fr"
-              class="nav-menu absolute left-4 right-4 mt-6 grid bg-white shadow-lg transition-all duration-1000 *:overflow-hidden"
+              class="nav-menu absolute left-4 right-4 z-[20000] mt-6 grid bg-white shadow-lg transition-all duration-1000 *:overflow-hidden"
             >
               <div>
                 <div class="border-t-2 border-t-orange-400 p-3">
@@ -137,7 +138,7 @@
                       >
                     </li>
                     <li
-                      class="active relative after:absolute after:left-0 after:right-0 after:m-auto after:block after:w-fit after:content-[url('/assets/images/Selected.svg')]"
+                      class="text-gray-800 transition-all duration-700 hover:brightness-50"
                     >
                       <a href="/solutions/">راهکار ها</a>
                     </li>
@@ -152,7 +153,7 @@
                       <a href="/articles/">مقالات</a>
                     </li>
                     <li
-                      class="text-gray-800 transition-all duration-700 hover:brightness-50"
+                      class="active relative after:absolute after:left-0 after:right-0 after:m-auto after:block after:w-fit after:content-[url('/assets/images/Selected.svg')]"
                     >
                       <a href="/contact/">تماس با ما</a>
                     </li>
@@ -225,10 +226,8 @@
           </div>
         </div>
       </nav>
-      <div class="border-y bg-white">
-        <div
-          class="container-w flex flex-col items-center gap-3 p-3 min-[400px]:flex-row"
-        >
+      <div class="z-50 border-y bg-white">
+        <div class="container-w flex items-center gap-3 p-3">
           <svg
             width="18"
             height="18"
@@ -249,335 +248,289 @@
             />
           </svg>
           <a
-            class="font-medium text-gray-800 transition-all duration-700 hover:brightness-50"
+            class="text-nowrap font-medium text-gray-800 transition-all duration-700 hover:brightness-50"
             href="/"
             >صفحه اصلی</a
           >
-          <p
-            class="font-medium text-gray-800 transition-all duration-700 hover:brightness-50"
-          >
-            /
-          </p>
+          <p>/</p>
           <a
-            class="font-medium text-gray-800 transition-all duration-700 hover:brightness-50"
-            href="/solutions/"
-            >راهکار ها</a
+            class="overflow-hidden text-ellipsis text-nowrap font-bold"
+            href="/contact/"
+            >تماس با ما</a
           >
-          <p
-            class="font-medium text-gray-800 transition-all duration-700 hover:brightness-50"
-          >
-            /
-          </p>
-          <a class="font-bold" href="/solutions/ota/"> OTA</a>
         </div>
       </div>
     </header>
     <main>
-      <div class="m-auto my-32 w-fit px-5 text-center">
-        <div>
-          <h1 class="text-center text-5xl font-extrabold md:text-7xl">OTA</h1>
-          <p class="mt-5 text-lg">
-            راهکار CRS ما به آژانس‌های مسافرتی آنلاین (OTA) یک موتور رزرو در
-            زمان <br class="hidden sm:block" />واقعی ارائه می‌کند تا مسافران را
-            به هتل‌های سراسر ایران متصل کند.
-          </p>
-        </div>
-      </div>
-      <section class="m-auto mb-12 w-fit">
-        <div class="flex">
-          <div class="relative flex basis-full flex-col justify-between">
-            <div class="block h-[25rem] lg:hidden">
-              <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center rounded-3xl rounded-r-[100vw] bg-gray-50 high-sm:absolute high-sm:-left-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-l-[18rem] high-sm:border lg:border-0"
+      <div class="container-w overflow-visible">
+        <div class="relative min-h-[296px] md:min-h-[296px]">
+          <div
+            class="absolute z-30 h-[68%] w-full bg-article-mobile bg-cover bg-no-repeat md:h-[496px] md:bg-articles md:bg-contain"
+          >
+            <div class="p-8 pt-6 md:pt-16">
+              <h1
+                class="text-2xl font-extrabold mid-sm:text-[2rem] md:text-4xl"
               >
-                <div
-                  class="w-full space-y-4 p-6 font-medium high-sm:ml-10 high-sm:mr-0 md:ml-2 lg:ml-12"
+                پشتیبانی در هر ساعت شبانه روز<span class="text-green-600"
+                  >!</span
                 >
-                  <h2
-                    class="text-center text-2xl font-extrabold high-sm:text-3xl"
-                  >
-                    موجودی و قیمت لحظه ای
-                  </h2>
-                </div>
-                <svg
-                  class="absolute left-0 top-12 ml-[2rem] hidden rotate-[268deg] lg:block"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
+              </h1>
+              <p class="mt-8 max-w-[50ch]">
+                اگر درمورد نحوه خرید پلن ها، نحوه پر کردن فرم درخواست و....
+                سوالی دارید یا به مشکل برخوردید میتوانید در هر ساعت شبانه روز از
+                طریق راه های زیر با ما در ارتباط باشید.
+              </p>
             </div>
-            <div class="hidden lg:block">
+          </div>
+        </div>
+        <section class="relative z-50 my-10 md:mx-6">
+          <div
+            class="order-1 m-auto w-full justify-items-center md:-order-1 md:m-0"
+          >
+            <div class="absolute right-0 -z-10 hidden md:block">
               <img
-                width="400"
-                class="m-auto"
-                src="/assets/images/original.png"
+                class="h-[1100px]"
+                src="/assets/images/pattern-2.png"
                 alt=""
               />
             </div>
-            <div class="block h-[25rem]">
-              <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center overflow-hidden rounded-3xl rounded-r-[100vw] bg-gray-50 high-sm:absolute high-sm:-left-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-l-[18rem] high-sm:border lg:border-0"
-              >
-                <div
-                  class="w-full space-y-4 p-6 font-medium high-sm:ml-0 md:ml-2 lg:ml-12 lg:mr-20"
-                >
-                  <h2
-                    class="text-center text-2xl font-extrabold high-sm:text-3xl lg:text-right"
-                  >
-                    سیستم مالی<br class="hidden high-sm:block lg:hidden" />
-                    منعطف
-                  </h2>
-                  <p class="hidden lg:block">
-                    امکان بهره مندی از سیستم های مالی متنوع به توجه به نیاز
-                    سازمانی شما.
-                  </p>
-                </div>
-
-                <svg
-                  class="absolute left-0 right-0 top-12 mr-[2rem] hidden rotate-[11deg] lg:block"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <div class="absolute right-0 -z-10 hidden md:block">
+            <div class="relative rounded-2xl border bg-white p-3 px-5 pb-5">
+              <div class="absolute top-0 hidden md:block">
                 <img
-                  class="h-[1100px]"
-                  src="/assets/images/pattern-2.png"
+                  class="h-[39rem]"
+                  src="/assets/images/contact-pattern.png"
                   alt=""
                 />
               </div>
-              <img
-                width="450"
-                class="hidden lg:block"
-                src="/assets/images/original2.png"
-                alt=""
-              />
-            </div>
-            <div class="block h-[25rem] lg:hidden">
               <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center overflow-hidden rounded-3xl rounded-r-[100vw] bg-gray-50 high-sm:absolute high-sm:-left-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-l-[18rem] high-sm:border lg:border-0"
+                class="mx-4 h-fit rounded-lg border p-2 text-center md:mx-12"
               >
-                <div
-                  class="w-full space-y-4 p-6 font-medium high-sm:ml-10 high-sm:mr-0 md:ml-2 lg:ml-12"
-                >
-                  <h2
-                    class="text-center text-2xl font-extrabold high-sm:text-3xl"
-                  >
-                    پشتیبانی چند زبانه
-                  </h2>
-                </div>
-                <svg
-                  class="absolute left-0 top-12 ml-[2rem] hidden rotate-[268deg] lg:block"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
+                <p>
+                  در همه‌ی روزهای هفته، می‌توانید از طریق
+                  <span class="font-bold">راه‌های زیر</span> با ما ارتباط
+                  بگیرید.
+                </p>
               </div>
-            </div>
-          </div>
-          <div class="flex justify-between">
-            <div
-              class="absolute left-0 right-0 flex h-[1110px] flex-col items-center justify-between bg-line bg-center bg-no-repeat high-sm:relative high-sm:my-24 lg:h-[1029px]"
-            >
-              <div class="mt-40 rounded-full bg-white p-4 high-sm:mt-0">
-                <div
-                  class="flex size-[122px] items-center justify-center rounded-full bg-orange-400 text-center text-6xl font-extrabold text-white"
-                >
-                  <p>۱</p>
-                </div>
-              </div>
-              <div class="rounded-full bg-white p-4">
-                <div
-                  class="flex size-[122px] items-center justify-center rounded-full bg-orange-400 text-center text-6xl font-extrabold text-white"
-                >
-                  <p>۲</p>
-                </div>
-              </div>
+              <div class="flex">
+                <div class="w-full">
+                  <div class="mx-6 mt-12 flex flex-col gap-3 md:flex-row">
+                    <div
+                      class="my-9 flex basis-[30%] flex-col justify-between gap-8"
+                    >
+                      <div class="flex items-center gap-3">
+                        <svg
+                          width="35"
+                          height="34"
+                          viewBox="0 0 39 36"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g opacity="0.4">
+                            <path
+                              d="M23.8954 6.32237C22.9597 6.16305 22.1004 6.71344 21.9222 7.55532C21.7441 8.3972 22.3431 9.21917 23.2534 9.38392C25.9939 9.87638 28.11 11.8317 28.6463 14.3664C28.799 15.096 29.4959 15.6283 30.2985 15.6283C30.4062 15.6283 30.5138 15.6193 30.6234 15.6012C31.5337 15.4328 32.1327 14.6126 31.9546 13.769C31.1539 9.9832 27.9925 7.05924 23.8954 6.32237Z"
+                              fill="#F9B233"
+                            />
+                            <path
+                              d="M23.7693 0.0143667C23.3309 -0.0435693 22.8904 0.0759236 22.54 0.333014C22.1798 0.593726 21.9547 0.97031 21.9058 1.39216C21.802 2.2449 22.4695 3.01617 23.3935 3.11213C29.7652 3.76753 34.7178 8.34266 35.4342 14.234C35.5302 15.0234 36.2486 15.6191 37.106 15.6191C37.1706 15.6191 37.2332 15.6154 37.2978 15.6082C37.7461 15.5629 38.1454 15.3583 38.4273 15.0325C38.7072 14.7066 38.8345 14.301 38.7836 13.8864C37.8909 6.53578 31.7189 0.830902 23.7693 0.0143667Z"
+                              fill="#F9B233"
+                            />
+                          </g>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M18.5495 19.5542C26.3904 26.7794 28.1691 18.4207 33.1615 23.019C37.9744 27.4541 40.7407 28.3426 34.6427 33.9618C33.8789 34.5276 29.0258 41.3347 11.9704 25.6186C-5.08705 9.90054 2.29383 5.42272 2.90785 4.71887C9.02061 -0.915832 9.96801 1.64876 14.781 6.0838C19.7733 10.6841 10.7086 12.329 18.5495 19.5542Z"
+                            fill="#F9B233"
+                          />
+                        </svg>
+                        <div>
+                          <p class="font-bold">تلفن پشتیبانی</p>
+                          <p class="text-xl">
+                            ۰۲۱-<span class="text-orange-400">۸۸۷۲۴۲۱۲</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <svg
+                          width="35"
+                          height="34"
+                          viewBox="0 0 45 38"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            opacity="0.4"
+                            d="M43.6894 27.2348C43.6894 33.0659 39.0042 37.7893 33.1687 37.8102H33.1478H12.4202C6.60556 37.8102 1.85767 33.1077 1.85767 27.2766V27.2557C1.85767 27.2557 1.87022 18.0054 1.88695 13.353C1.88904 12.4794 2.893 11.9903 3.57695 12.5337C8.54655 16.4734 17.4337 23.6567 17.5446 23.7508C19.0296 24.94 20.912 25.6109 22.8363 25.6109C24.7605 25.6109 26.6429 24.94 28.128 23.7278C28.2388 23.6546 36.9273 16.6866 41.9722 12.6821C42.6582 12.1366 43.6664 12.6257 43.6684 13.4972C43.6894 18.114 43.6894 27.2348 43.6894 27.2348Z"
+                            fill="#F9B233"
+                          />
+                          <path
+                            d="M42.5936 5.77763C40.7823 2.36675 37.2182 0.188965 33.2944 0.188965H12.4204C8.49656 0.188965 4.9325 2.36675 3.12119 5.77763C2.71542 6.54048 2.90785 7.49143 3.58343 8.03065L19.1134 20.4432C20.2011 21.321 21.5188 21.7578 22.8365 21.7578C22.8448 21.7578 22.8511 21.7578 22.8574 21.7578C22.8637 21.7578 22.872 21.7578 22.8783 21.7578C24.196 21.7578 25.5137 21.321 26.6013 20.4432L42.1313 8.03065C42.8069 7.49143 42.9994 6.54048 42.5936 5.77763Z"
+                            fill="#F9B233"
+                          />
+                        </svg>
 
-              <div class="rounded-full bg-white p-4">
-                <div
-                  class="flex size-[122px] items-center justify-center rounded-full bg-orange-400 text-center text-6xl font-extrabold text-white"
-                >
-                  <p>۳</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="relative flex basis-full flex-col justify-between">
-            <div class="h-[25rem]">
-              <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center overflow-hidden rounded-3xl rounded-l-[100vw] bg-gray-50 high-sm:absolute high-sm:-right-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-r-[18rem] high-sm:border lg:border-0"
-              >
-                <div
-                  class="ml-4 w-full space-y-4 p-6 font-medium high-sm:mr-12 lg:ml-12"
-                >
-                  <h2
-                    class="hidden p-[1.2rem] text-3xl font-extrabold lg:block"
-                  >
-                    موجودی و قیمت لحظه ای
-                  </h2>
-                  <p>
-                    دسترسی لحظه ای به موجودی اتاق ها و نرخ‌ها شامل طیف گسترده‌ای
-                    از هتل های ایران.
-                  </p>
-                </div>
-                <svg
-                  class="absolute left-0 ml-[.1rem] hidden w-[70px] rotate-[255deg] sm:top-0 sm:block high-sm:hidden lg:top-12 lg:ml-8 lg:block lg:w-[126px] lg:rotate-[268deg]"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="hidden lg:block">
-              <img width="450" src="/assets/images/fpd.png" alt="" />
-            </div>
-            <div class="block h-[25rem] lg:hidden">
-              <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center overflow-hidden rounded-3xl rounded-l-[100vw] bg-gray-50 high-sm:absolute high-sm:-right-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-r-[18rem] high-sm:border lg:border-0"
-              >
-                <div
-                  class="ml-4 w-full space-y-4 p-6 font-medium high-sm:mr-12 lg:ml-12"
-                >
-                  <h2
-                    class="hidden p-[1.2rem] text-3xl font-extrabold lg:block"
-                  >
-                    سیستم مدیریت دارایی (PMS)
-                  </h2>
-                  <p>
-                    امکان بهره مندی از سیستم های مالی متنوع به توجه به نیاز
-                    سازمانی شما.
-                  </p>
-                </div>
-                <svg
-                  class="absolute left-0 ml-[.1rem] hidden w-[70px] rotate-[255deg] sm:top-0 sm:block high-sm:hidden lg:top-12 lg:ml-8 lg:block lg:w-[126px] lg:rotate-[268deg]"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="h-[25rem]">
-              <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center overflow-hidden rounded-3xl rounded-l-[100vw] bg-gray-50 high-sm:absolute high-sm:-right-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-r-[18rem] high-sm:border lg:border-0"
-              >
-                <div
-                  class="ml-4 w-full space-y-4 p-6 font-medium high-sm:mr-12 lg:ml-12"
-                >
-                  <h2 class="hidden text-3xl font-extrabold lg:block">
-                    پشتیبانی چند زبانه
-                  </h2>
-                  <p>امکان ارائه خدمات به چندین زبان.</p>
-                </div>
-                <svg
-                  class="absolute left-0 ml-[.1rem] hidden w-[70px] rotate-[255deg] sm:top-0 sm:block high-sm:hidden lg:top-12 lg:ml-8 lg:block lg:w-[126px] lg:rotate-[268deg]"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                        <div class="font-bold">
+                          <p>ایمیل</p>
+                          <p class="text-[1rem]">Mangotels.ir</p>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <svg
+                          width="35"
+                          height="34"
+                          viewBox="0 0 43 42"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_199_532)">
+                            <path
+                              opacity="0.5"
+                              d="M21.7946 41.8332C33.3009 41.8332 42.628 32.5061 42.628 20.9998C42.628 9.49358 33.3009 0.166504 21.7946 0.166504C10.2884 0.166504 0.961304 9.49358 0.961304 20.9998C0.961304 32.5061 10.2884 41.8332 21.7946 41.8332Z"
+                              fill="#F9B233"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.7947 11.104C22.2091 11.104 22.6065 11.2686 22.8995 11.5616C23.1926 11.8547 23.3572 12.2521 23.3572 12.6665V20.354L28.1072 25.104C28.2607 25.2471 28.3838 25.4196 28.4692 25.6112C28.5546 25.8029 28.6005 26.0098 28.6042 26.2196C28.6079 26.4294 28.5694 26.6378 28.4908 26.8323C28.4122 27.0269 28.2952 27.2036 28.1468 27.352C27.9985 27.5004 27.8217 27.6173 27.6272 27.6959C27.4326 27.7745 27.2242 27.8131 27.0144 27.8094C26.8046 27.8057 26.5977 27.7598 26.4061 27.6744C26.2144 27.589 26.0419 27.4659 25.8988 27.3123L20.6905 22.104C20.3974 21.8113 20.2325 21.4141 20.2322 20.9998V12.6665C20.2322 12.2521 20.3968 11.8547 20.6898 11.5616C20.9828 11.2686 21.3803 11.104 21.7947 11.104Z"
+                              fill="#F9B233"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_199_532">
+                              <rect
+                                width="42"
+                                height="42"
+                                fill="white"
+                                transform="translate(0.794678)"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
 
-      <div style="margin-inline: 1rem">
-        <div
-          class="container-w !mx-auto !my-40 flex flex-col items-center justify-between rounded-2xl bg-[#EAF7F0] bg-green-demo bg-cover bg-center bg-no-repeat high-sm:rounded-full md:flex-row md:bg-transparent"
-        >
-          <div
-            class="flex flex-col items-center gap-3 p-3 font-medium sm:flex-row"
-          >
-            <img class="p-3" width="100" src="/assets/images/gr.png" alt="" />
-            <p>
-              راهکـــار PMS ما برای کمک به هتل‌ها در افزایش نرخ اشغال، ساده‌سازی
-              عملیات <br />و ارائه یک تجربه مهمان برتر طراحی شده است.
-            </p>
+                        <div>
+                          <p class="font-bold">ساعت کاری</p>
+                          <p class="text-[1rem] font-medium">9:00 تا 17:00</p>
+                        </div>
+                      </div>
+                      <ul class="flex items-center gap-3">
+                        <li>
+                          <img src="/assets/images/instagram.png" alt="" />
+                        </li>
+                        <li>
+                          <img src="/assets/images/youtube.png" alt="" />
+                        </li>
+                        <li>
+                          <img src="/assets/images/whatsapp.png" alt="" />
+                        </li>
+                        <li>
+                          <img src="/assets/images/facebook.png" alt="" />
+                        </li>
+                      </ul>
+                    </div>
+                    <div style="flex-basis: 70%">
+                      <div>
+                        <div class="flex items-center gap-3">
+                          <svg
+                            width="30"
+                            height="40"
+                            viewBox="0 0 32 42"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.29529 1.94749C13.062 -0.691714 18.921 -0.645585 23.6429 2.06832C28.3185 4.8375 31.1601 9.77967 31.1339 15.0961C31.0248 20.3776 27.9778 25.3422 24.1689 29.1801C21.9706 31.4052 19.5113 33.3728 16.8414 35.0426C16.5665 35.1941 16.2653 35.2955 15.9527 35.3419C15.6519 35.3297 15.3589 35.245 15.1003 35.0954C11.0242 32.5864 7.44817 29.3837 4.54433 25.6415C2.11449 22.5177 0.734023 18.7437 0.590393 14.832L0.601271 14.2629C0.799665 9.15696 3.69885 4.49243 8.29529 1.94749ZM17.8416 10.467C15.9038 9.68208 13.6697 10.1085 12.1824 11.5471C10.6951 12.9857 10.2479 15.1528 11.0498 17.0364C11.8516 18.92 13.7442 20.1487 15.8439 20.1487C17.2194 20.1581 18.5417 19.6331 19.5161 18.6906C20.4905 17.7481 21.036 16.4665 21.0312 15.1313C21.0385 13.0932 19.7793 11.2518 17.8416 10.467Z"
+                              fill="#F9B233"
+                            />
+                            <path
+                              opacity="0.4"
+                              d="M15.8627 41.5793C21.8873 41.5793 26.7712 40.6485 26.7712 39.5003C26.7712 38.3522 21.8873 37.4214 15.8627 37.4214C9.83816 37.4214 4.95428 38.3522 4.95428 39.5003C4.95428 40.6485 9.83816 41.5793 15.8627 41.5793Z"
+                              fill="#F9B233"
+                            />
+                          </svg>
+
+                          <div>
+                            <p class="font-bold">آدرس</p>
+                            <p class="text-[1rem] font-medium">
+                              تهران، تهران، شیخ بهایی، ونک پارک، ضلع شرقی برج
+                              الوند، واحد 1 اداری
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-10">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4855.394811858212!2d13.409419051775249!3d52.520815005289215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1f9014ffeb%3A0xc8fafc484349e4a1!2z2KjYsdisINio2LHZhNuM2YY!5e0!3m2!1sfa!2s!4v1724929146763!5m2!1sfa!2s"
+                          width="100%"
+                          class="!h-[26rem] rounded-xl outline-none focus-within:outline-none focus:outline-none active:outline-none"
+                          style="border: 0"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
+        </section>
+        <section class="m-auto mt-36 max-w-[60rem]">
+          <h1 class="m-auto text-center text-5xl font-extrabold">
+            فرم ارسال پیام
+          </h1>
+
+          <form action="" class="mt-4 space-y-4">
             <div>
-              <button
-                class="mb-3 ml-5 flex items-center gap-2 rounded-full border-0 border-white bg-green-600 p-1 px-2 font-bold text-white md:border md:border-solid md:border-white md:bg-transparent"
-              >
-                درخواست دمو<svg
-                  width="30"
-                  height="30"
-                  viewBox="0 0 34 34"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              <div>
+                <label for="" class="block">
+                  <span class="font-extrabold">عنوان پیام</span>
+                  :(اختیاری)</label
                 >
-                  <path
-                    opacity="0.5"
-                    d="M17.0002 31.1668C9.17591 31.1668 2.8335 24.8244 2.8335 17.0002C2.8335 9.17591 9.17591 2.8335 17.0002 2.8335C24.8244 2.8335 31.1668 9.17591 31.1668 17.0002C31.1668 24.8244 24.8244 31.1668 17.0002 31.1668Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M18.3742 11.9993C18.4715 11.8949 18.5888 11.8112 18.7191 11.7531C18.8494 11.695 18.9901 11.6638 19.1328 11.6613C19.2755 11.6588 19.4172 11.685 19.5495 11.7385C19.6818 11.7919 19.802 11.8714 19.9028 11.9723C20.0037 12.0732 20.0833 12.1934 20.1367 12.3257C20.1902 12.458 20.2164 12.5997 20.2139 12.7424C20.2114 12.885 20.1801 13.0257 20.1221 13.1561C20.064 13.2864 19.9803 13.4037 19.8759 13.501L16.3767 17.0001L19.8759 20.4993C19.9803 20.5966 20.064 20.7139 20.1221 20.8442C20.1801 20.9745 20.2114 21.1152 20.2139 21.2579C20.2164 21.4006 20.1902 21.5423 20.1367 21.6746C20.0833 21.8069 20.0037 21.927 19.9028 22.0279C19.802 22.1288 19.6818 22.2084 19.5495 22.2618C19.4172 22.3152 19.2755 22.3415 19.1328 22.339C18.9901 22.3365 18.8494 22.3052 18.7191 22.2472C18.5888 22.1891 18.4715 22.1054 18.3742 22.001L14.1242 17.751C13.9252 17.5518 13.8135 17.2817 13.8135 17.0001C13.8135 16.7186 13.9252 16.4485 14.1242 16.2493L18.3742 11.9993Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
+                <input
+                  class="w-full rounded-lg border p-1 outline-none"
+                  placeholder="علی رضایی"
+                  type="text"
+                />
+              </div>
             </div>
-          </div>
-        </div>
+            <div class="flex items-center gap-4 *:basis-full">
+              <div>
+                <label for="" class="block font-extrabold"
+                  >نام و نام خانوادگی:</label
+                >
+                <input
+                  class="w-full rounded-lg border p-1 outline-none"
+                  placeholder="علی رضایی"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label for="" class="block font-extrabold">ایمیل:</label>
+                <input
+                  class="w-full rounded-lg border p-1 outline-none"
+                  placeholder="علی رضایی"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="" class="block font-extrabold">متن پیام:</label>
+              <textarea
+                class="h-[10rem] w-full resize-none rounded-lg border p-1 outline-none"
+                name=""
+                id=""
+                placeholder="دیدگاه شما:"
+              ></textarea>
+            </div>
+            <div class="m-auto mt-4 flex w-fit items-center justify-between">
+              <div>
+                <button class="rounded-full bg-orange-400 p-2 px-5 text-white">
+                  ارسال پیام
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
       </div>
       <div class="m-auto my-32 w-fit max-w-[30rem] space-y-7 px-5 text-center">
         <div class="flex flex-col items-center gap-5 text-center sm:flex-row">

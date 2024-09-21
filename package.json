@@ -20,6 +20,7 @@
     "vite-plugin-minify": "^2.0.0"
   },
   "dependencies": {
-    "@splidejs/splide": "^4.1.4"
+    "@splidejs/splide": "^4.1.4",
+    "bs-stepper": "^1.7.0"
   }
 }

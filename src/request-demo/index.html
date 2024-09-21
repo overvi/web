@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solutions</title>
+    <title>Articles</title>
+
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <div class="absolute left-0 -z-10 hidden md:block">
       <img class="h-[1300px]" src="/assets/images/first-pattern.png" alt="" />
     </div>
-    <header class="space-y-5">
+    <header class="mb-16 space-y-5">
       <div class="hidden border-b py-5 *:text-gray-300 sm:block">
         <div class="container-w m-auto flex items-center justify-between">
           <div class="flex gap-4 *:font-medium">
@@ -65,7 +66,7 @@
             >
           </li>
           <li
-            class="active relative after:absolute after:left-0 after:right-0 after:top-5 after:m-auto after:block after:w-fit after:content-[url('/assets/images/Selected.svg')]"
+            class="text-gray-800 transition-all duration-700 hover:brightness-50"
           >
             <a href="/solutions/">راهکار ها</a>
           </li>
@@ -137,7 +138,7 @@
                       >
                     </li>
                     <li
-                      class="active relative after:absolute after:left-0 after:right-0 after:m-auto after:block after:w-fit after:content-[url('/assets/images/Selected.svg')]"
+                      class="text-gray-800 transition-all duration-700 hover:brightness-50"
                     >
                       <a href="/solutions/">راهکار ها</a>
                     </li>
@@ -225,10 +226,8 @@
           </div>
         </div>
       </nav>
-      <div class="border-y bg-white">
-        <div
-          class="container-w flex flex-col items-center gap-3 p-3 min-[400px]:flex-row"
-        >
+      <div class="z-50 border-y bg-white">
+        <div class="container-w flex items-center gap-3 p-3">
           <svg
             width="18"
             height="18"
@@ -253,332 +252,334 @@
             href="/"
             >صفحه اصلی</a
           >
-          <p
-            class="font-medium text-gray-800 transition-all duration-700 hover:brightness-50"
-          >
-            /
-          </p>
-          <a
-            class="font-medium text-gray-800 transition-all duration-700 hover:brightness-50"
-            href="/solutions/"
-            >راهکار ها</a
-          >
-          <p
-            class="font-medium text-gray-800 transition-all duration-700 hover:brightness-50"
-          >
-            /
-          </p>
-          <a class="font-bold" href="/solutions/ota/"> OTA</a>
+          <p>/</p>
+          <a class="font-bold" href="/request-demo/">درخواست دمو</a>
         </div>
       </div>
     </header>
     <main>
-      <div class="m-auto my-32 w-fit px-5 text-center">
-        <div>
-          <h1 class="text-center text-5xl font-extrabold md:text-7xl">OTA</h1>
-          <p class="mt-5 text-lg">
-            راهکار CRS ما به آژانس‌های مسافرتی آنلاین (OTA) یک موتور رزرو در
-            زمان <br class="hidden sm:block" />واقعی ارائه می‌کند تا مسافران را
-            به هتل‌های سراسر ایران متصل کند.
-          </p>
+      <div class="m-auto w-fit text-center">
+        <div class="m-auto flex w-fit flex-col items-center gap-2 sm:flex-row">
+          <h1 class="text-nowrap text-2xl font-extrabold sm:text-[4.4vw]">
+            فرم درخواست برای استفاده از خدمات
+          </h1>
+          <img
+            class="w-[19vw] sm:w-[13vw]"
+            src="/assets/images/mangotles.png"
+            alt=""
+          />
         </div>
+        <p class="mt-4">
+          برای استفاده از خدمات منگوتلز و مدیریت هوشمند و راحت هتل های خود فرم
+          زیر را پر کنید.
+        </p>
       </div>
-      <section class="m-auto mb-12 w-fit">
-        <div class="flex">
-          <div class="relative flex basis-full flex-col justify-between">
-            <div class="block h-[25rem] lg:hidden">
+      <div class="mx-4">
+        <section
+          class="mx-auto my-44 max-w-[40rem] rounded-3xl border p-3 px-5"
+        >
+          <form
+            action="
+        "
+          >
+            <div class="bs-stepper">
               <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center rounded-3xl rounded-r-[100vw] bg-gray-50 high-sm:absolute high-sm:-left-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-l-[18rem] high-sm:border lg:border-0"
+                class="bs-stepper-header !flex !flex-col mid-sm:!flex-row"
+                role="tablist"
               >
-                <div
-                  class="w-full space-y-4 p-6 font-medium high-sm:ml-10 high-sm:mr-0 md:ml-2 lg:ml-12"
-                >
-                  <h2
-                    class="text-center text-2xl font-extrabold high-sm:text-3xl"
+                <!-- your steps here -->
+                <div class="step group" data-target="#stay">
+                  <button
+                    type="button"
+                    class="step-trigger flex flex-col"
+                    role="tab"
+                    aria-controls="stay"
+                    id="stay-trigger"
                   >
-                    موجودی و قیمت لحظه ای
-                  </h2>
+                    <div class="flex">
+                      <span
+                        class="bs-stepper-circle flex items-center !rounded-full !bg-gray-300 !p-7 text-2xl !text-black group-[.active]:!bg-orange-400"
+                        >1</span
+                      >
+                      <div>
+                        <span class="bs-stepper-label">انتخاب نوع</span>
+                        <p class="text-black">اقامتگاه</p>
+                      </div>
+                    </div>
+                  </button>
                 </div>
-                <svg
-                  class="absolute left-0 top-12 ml-[2rem] hidden rotate-[268deg] lg:block"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
+                <div class="line"></div>
+                <div class="step group" data-target="#rooms">
+                  <button
+                    type="button"
+                    class="step-trigger"
+                    role="tab"
+                    aria-controls="rooms"
+                    id="rooms-trigger"
+                  >
+                    <div class="flex">
+                      <span
+                        class="bs-stepper-circle flex items-center !rounded-full !bg-gray-300 !p-7 text-2xl !text-black group-[.active]:!bg-orange-400"
+                        >2</span
+                      >
+                      <div>
+                        <span class="bs-stepper-label">انتخاب نوع</span>
+                        <p class="text-black">تعداد اتاق</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div class="line"></div>
+                <div class="step group" data-target="#fill">
+                  <button
+                    type="button"
+                    class="step-trigger"
+                    role="tab"
+                    aria-controls="fill"
+                    id="fill-trigger"
+                  >
+                    <div class="flex">
+                      <span
+                        class="bs-stepper-circle flex items-center !rounded-full !bg-gray-300 !p-7 text-2xl !text-black group-[.active]:!bg-orange-400"
+                        >3</span
+                      >
+                      <div>
+                        <span class="bs-stepper-label">اطلاعات </span>
+                        <p class="text-black">تکمیلی</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="hidden lg:block">
-              <img
-                width="400"
-                class="m-auto"
-                src="/assets/images/original.png"
-                alt=""
-              />
-            </div>
-            <div class="block h-[25rem]">
-              <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center overflow-hidden rounded-3xl rounded-r-[100vw] bg-gray-50 high-sm:absolute high-sm:-left-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-l-[18rem] high-sm:border lg:border-0"
-              >
+              <div class="bs-stepper-content">
+                <!-- your steps content here -->
                 <div
-                  class="w-full space-y-4 p-6 font-medium high-sm:ml-0 md:ml-2 lg:ml-12 lg:mr-20"
+                  id="stay"
+                  class="content"
+                  role="tabpanel"
+                  aria-labelledby="stay-trigger"
                 >
-                  <h2
-                    class="text-center text-2xl font-extrabold high-sm:text-3xl lg:text-right"
-                  >
-                    سیستم مالی<br class="hidden high-sm:block lg:hidden" />
-                    منعطف
-                  </h2>
-                  <p class="hidden lg:block">
-                    امکان بهره مندی از سیستم های مالی متنوع به توجه به نیاز
-                    سازمانی شما.
-                  </p>
-                </div>
+                  <div class="grid grid-cols-2 gap-6">
+                    <div class="relative flex py-6 font-bold">
+                      <input
+                        type="radio"
+                        class="peer opacity-0"
+                        id="threeFive"
+                        name="stay"
+                      />
+                      <label
+                        for="threeFive"
+                        class="absolute inset-0 flex items-center rounded-lg border peer-checked:border-orange-400 peer-checked:text-orange-400"
+                        ><p class="mr-3">هتل های 3 تا 5 ستاره</p></label
+                      >
+                    </div>
 
-                <svg
-                  class="absolute left-0 right-0 top-12 mr-[2rem] hidden rotate-[11deg] lg:block"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <div class="absolute right-0 -z-10 hidden md:block">
-                <img
-                  class="h-[1100px]"
-                  src="/assets/images/pattern-2.png"
-                  alt=""
-                />
-              </div>
-              <img
-                width="450"
-                class="hidden lg:block"
-                src="/assets/images/original2.png"
-                alt=""
-              />
-            </div>
-            <div class="block h-[25rem] lg:hidden">
-              <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center overflow-hidden rounded-3xl rounded-r-[100vw] bg-gray-50 high-sm:absolute high-sm:-left-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-l-[18rem] high-sm:border lg:border-0"
-              >
-                <div
-                  class="w-full space-y-4 p-6 font-medium high-sm:ml-10 high-sm:mr-0 md:ml-2 lg:ml-12"
-                >
-                  <h2
-                    class="text-center text-2xl font-extrabold high-sm:text-3xl"
-                  >
-                    پشتیبانی چند زبانه
-                  </h2>
+                    <div class="relative flex py-6 font-bold">
+                      <input
+                        type="radio"
+                        class="peer opacity-0"
+                        id="apart"
+                        name="stay"
+                      />
+                      <label
+                        for="apart"
+                        class="absolute inset-0 flex items-center rounded-lg border peer-checked:border-orange-400 peer-checked:text-orange-400"
+                        ><p class="mr-3">هتل آپارتمان</p></label
+                      >
+                    </div>
+                    <div class="relative flex py-6 font-bold">
+                      <input
+                        type="radio"
+                        class="peer opacity-0"
+                        id="guest"
+                        name="stay"
+                      />
+                      <label
+                        for="guest"
+                        class="absolute inset-0 flex items-center rounded-lg border peer-checked:border-orange-400 peer-checked:text-orange-400"
+                        ><p class="mr-3">مهمان پذیر و اقامتگاه</p></label
+                      >
+                    </div>
+                    <div class="relative flex py-6 font-bold">
+                      <input
+                        type="radio"
+                        class="peer opacity-0"
+                        id="boom"
+                        name="stay"
+                      />
+                      <label
+                        for="boom"
+                        class="absolute inset-0 flex items-center rounded-lg border peer-checked:border-orange-400 peer-checked:text-orange-400"
+                        ><p class="mr-3">بوم گردی</p></label
+                      >
+                    </div>
+                  </div>
                 </div>
-                <svg
-                  class="absolute left-0 top-12 ml-[2rem] hidden rotate-[268deg] lg:block"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  id="rooms"
+                  class="content"
+                  role="tabpanel"
+                  aria-labelledby="rooms-trigger"
                 >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
+                  <div class="m-auto w-fit">
+                    <label for="" class="block font-bold">تعداد اتاق</label>
+                    <input
+                      min="1"
+                      type="number"
+                      class="mt-3 rounded-lg border p-2"
+                    />
+                  </div>
+                </div>
+                <div
+                  id="fill"
+                  class="content"
+                  role="tabpanel"
+                  aria-labelledby="fill-trigger"
+                >
+                  <div class="flex items-center gap-4 *:basis-full">
+                    <div>
+                      <label for="" class="block font-semibold"
+                        >نام و نام خانوادگی:</label
+                      >
+                      <input
+                        class="w-full rounded-lg border p-1 outline-none"
+                        placeholder="علی رضایی"
+                        type="text"
+                      />
+                    </div>
+                    <div>
+                      <label for="" class="block font-semibold"
+                        >نام کمپانی:</label
+                      >
+                      <input
+                        class="w-full rounded-lg border p-1 outline-none"
+                        placeholder="علی رضایی"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-4 flex items-center gap-4 *:basis-full">
+                    <div>
+                      <label for="" class="block font-semibold">ایمیل:</label>
+                      <input
+                        class="w-full rounded-lg border p-1 outline-none"
+                        placeholder="علی رضایی"
+                        type="text"
+                      />
+                    </div>
+                    <div>
+                      <label for="" class="block font-semibold">کشور:</label>
+                      <input
+                        class="w-full rounded-lg border p-1 outline-none"
+                        placeholder="علی رضایی"
+                        type="text"
+                      />
+                    </div>
+                    <div>
+                      <label for="" class="block font-semibold">استان:</label>
+                      <input
+                        class="w-full rounded-lg border p-1 outline-none"
+                        placeholder="علی رضایی"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="flex justify-between">
-            <div
-              class="absolute left-0 right-0 flex h-[1110px] flex-col items-center justify-between bg-line bg-center bg-no-repeat high-sm:relative high-sm:my-24 lg:h-[1029px]"
+          </form>
+          <div class="mt-4 flex justify-between">
+            <button
+              id="prev-step"
+              class="rounded-full p-3 px-7 font-bold text-gray-300"
             >
-              <div class="mt-40 rounded-full bg-white p-4 high-sm:mt-0">
-                <div
-                  class="flex size-[122px] items-center justify-center rounded-full bg-orange-400 text-center text-6xl font-extrabold text-white"
-                >
-                  <p>۱</p>
-                </div>
-              </div>
-              <div class="rounded-full bg-white p-4">
-                <div
-                  class="flex size-[122px] items-center justify-center rounded-full bg-orange-400 text-center text-6xl font-extrabold text-white"
-                >
-                  <p>۲</p>
-                </div>
-              </div>
-
-              <div class="rounded-full bg-white p-4">
-                <div
-                  class="flex size-[122px] items-center justify-center rounded-full bg-orange-400 text-center text-6xl font-extrabold text-white"
-                >
-                  <p>۳</p>
-                </div>
-              </div>
+              قبلی
+            </button>
+            <button
+              id="next-step"
+              class="rounded-full bg-orange-400 p-3 px-7 font-bold text-white"
+            >
+              بعدی
+            </button>
+          </div>
+        </section>
+      </div>
+      <section class="container-w">
+        <div
+          class="relative z-50 flex flex-col gap-12 rounded-3xl border bg-white py-12 high-sm:flex-row md:gap-48 lg:items-center"
+        >
+          <div>
+            <div class="w-fit rounded-l-[100vw] bg-orange-400 p-3 px-6">
+              <p class="text-2xl font-bold">سوالی دارید؟!</p>
+            </div>
+            <div class="p-3 text-[1rem] md:text-lg">
+              <p>
+                اگر جواب سوال های خود را پیدا نکردید، می توانید با پشتیبانی ما
+                تماس بگیرید.<br />
+                ما 24 ساعته پشتیبان شما هستیم.
+              </p>
             </div>
           </div>
-          <div class="relative flex basis-full flex-col justify-between">
-            <div class="h-[25rem]">
-              <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center overflow-hidden rounded-3xl rounded-l-[100vw] bg-gray-50 high-sm:absolute high-sm:-right-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-r-[18rem] high-sm:border lg:border-0"
+          <div class="space-y-8 self-center">
+            <div class="flex items-center gap-3">
+              <svg
+                width="35"
+                height="34"
+                viewBox="0 0 39 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <div
-                  class="ml-4 w-full space-y-4 p-6 font-medium high-sm:mr-12 lg:ml-12"
-                >
-                  <h2
-                    class="hidden p-[1.2rem] text-3xl font-extrabold lg:block"
-                  >
-                    موجودی و قیمت لحظه ای
-                  </h2>
-                  <p>
-                    دسترسی لحظه ای به موجودی اتاق ها و نرخ‌ها شامل طیف گسترده‌ای
-                    از هتل های ایران.
-                  </p>
-                </div>
-                <svg
-                  class="absolute left-0 ml-[.1rem] hidden w-[70px] rotate-[255deg] sm:top-0 sm:block high-sm:hidden lg:top-12 lg:ml-8 lg:block lg:w-[126px] lg:rotate-[268deg]"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <g opacity="0.4">
                   <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
+                    d="M23.8954 6.32237C22.9597 6.16305 22.1004 6.71344 21.9222 7.55532C21.7441 8.3972 22.3431 9.21917 23.2534 9.38392C25.9939 9.87638 28.11 11.8317 28.6463 14.3664C28.799 15.096 29.4959 15.6283 30.2985 15.6283C30.4062 15.6283 30.5138 15.6193 30.6234 15.6012C31.5337 15.4328 32.1327 14.6126 31.9546 13.769C31.1539 9.9832 27.9925 7.05924 23.8954 6.32237Z"
+                    fill="#F9B233"
                   />
-                </svg>
+                  <path
+                    d="M23.7693 0.0143667C23.3309 -0.0435693 22.8904 0.0759236 22.54 0.333014C22.1798 0.593726 21.9547 0.97031 21.9058 1.39216C21.802 2.2449 22.4695 3.01617 23.3935 3.11213C29.7652 3.76753 34.7178 8.34266 35.4342 14.234C35.5302 15.0234 36.2486 15.6191 37.106 15.6191C37.1706 15.6191 37.2332 15.6154 37.2978 15.6082C37.7461 15.5629 38.1454 15.3583 38.4273 15.0325C38.7072 14.7066 38.8345 14.301 38.7836 13.8864C37.8909 6.53578 31.7189 0.830902 23.7693 0.0143667Z"
+                    fill="#F9B233"
+                  />
+                </g>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18.5495 19.5542C26.3904 26.7794 28.1691 18.4207 33.1615 23.019C37.9744 27.4541 40.7407 28.3426 34.6427 33.9618C33.8789 34.5276 29.0258 41.3347 11.9704 25.6186C-5.08705 9.90054 2.29383 5.42272 2.90785 4.71887C9.02061 -0.915832 9.96801 1.64876 14.781 6.0838C19.7733 10.6841 10.7086 12.329 18.5495 19.5542Z"
+                  fill="#F9B233"
+                />
+              </svg>
+              <div>
+                <p class="font-bold">تلفن پشتیبانی</p>
+                <p class="text-xl">
+                  ۰۲۱-<span class="text-orange-400">۸۸۷۲۴۲۱۲</span>
+                </p>
               </div>
             </div>
-            <div class="hidden lg:block">
-              <img width="450" src="/assets/images/fpd.png" alt="" />
-            </div>
-            <div class="block h-[25rem] lg:hidden">
-              <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center overflow-hidden rounded-3xl rounded-l-[100vw] bg-gray-50 high-sm:absolute high-sm:-right-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-r-[18rem] high-sm:border lg:border-0"
+            <div class="flex items-center gap-3">
+              <svg
+                width="35"
+                height="34"
+                viewBox="0 0 45 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <div
-                  class="ml-4 w-full space-y-4 p-6 font-medium high-sm:mr-12 lg:ml-12"
-                >
-                  <h2
-                    class="hidden p-[1.2rem] text-3xl font-extrabold lg:block"
-                  >
-                    سیستم مدیریت دارایی (PMS)
-                  </h2>
-                  <p>
-                    امکان بهره مندی از سیستم های مالی متنوع به توجه به نیاز
-                    سازمانی شما.
-                  </p>
-                </div>
-                <svg
-                  class="absolute left-0 ml-[.1rem] hidden w-[70px] rotate-[255deg] sm:top-0 sm:block high-sm:hidden lg:top-12 lg:ml-8 lg:block lg:w-[126px] lg:rotate-[268deg]"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="h-[25rem]">
-              <div
-                class="relative -z-10 flex h-[11rem] items-center justify-center overflow-hidden rounded-3xl rounded-l-[100vw] bg-gray-50 high-sm:absolute high-sm:-right-14 high-sm:mr-3 high-sm:h-[25rem] high-sm:w-[41vw] high-sm:rounded-r-[18rem] high-sm:border lg:border-0"
-              >
-                <div
-                  class="ml-4 w-full space-y-4 p-6 font-medium high-sm:mr-12 lg:ml-12"
-                >
-                  <h2 class="hidden text-3xl font-extrabold lg:block">
-                    پشتیبانی چند زبانه
-                  </h2>
-                  <p>امکان ارائه خدمات به چندین زبان.</p>
-                </div>
-                <svg
-                  class="absolute left-0 ml-[.1rem] hidden w-[70px] rotate-[255deg] sm:top-0 sm:block high-sm:hidden lg:top-12 lg:ml-8 lg:block lg:w-[126px] lg:rotate-[268deg]"
-                  width="126"
-                  height="124"
-                  viewBox="0 0 126 129"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 10C44.1667 15.3333 113.2 44.5 116 118.5"
-                    stroke="white"
-                    stroke-width="20"
-                    stroke-linecap="round"
-                  />
-                </svg>
+                <path
+                  opacity="0.4"
+                  d="M43.6894 27.2348C43.6894 33.0659 39.0042 37.7893 33.1687 37.8102H33.1478H12.4202C6.60556 37.8102 1.85767 33.1077 1.85767 27.2766V27.2557C1.85767 27.2557 1.87022 18.0054 1.88695 13.353C1.88904 12.4794 2.893 11.9903 3.57695 12.5337C8.54655 16.4734 17.4337 23.6567 17.5446 23.7508C19.0296 24.94 20.912 25.6109 22.8363 25.6109C24.7605 25.6109 26.6429 24.94 28.128 23.7278C28.2388 23.6546 36.9273 16.6866 41.9722 12.6821C42.6582 12.1366 43.6664 12.6257 43.6684 13.4972C43.6894 18.114 43.6894 27.2348 43.6894 27.2348Z"
+                  fill="#F9B233"
+                />
+                <path
+                  d="M42.5936 5.77763C40.7823 2.36675 37.2182 0.188965 33.2944 0.188965H12.4204C8.49656 0.188965 4.9325 2.36675 3.12119 5.77763C2.71542 6.54048 2.90785 7.49143 3.58343 8.03065L19.1134 20.4432C20.2011 21.321 21.5188 21.7578 22.8365 21.7578C22.8448 21.7578 22.8511 21.7578 22.8574 21.7578C22.8637 21.7578 22.872 21.7578 22.8783 21.7578C24.196 21.7578 25.5137 21.321 26.6013 20.4432L42.1313 8.03065C42.8069 7.49143 42.9994 6.54048 42.5936 5.77763Z"
+                  fill="#F9B233"
+                />
+              </svg>
+              <div>
+                <p class="font-bold">ایمیل</p>
+                <p class="text-lg">Mangotels.ir</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div style="margin-inline: 1rem">
-        <div
-          class="container-w !mx-auto !my-40 flex flex-col items-center justify-between rounded-2xl bg-[#EAF7F0] bg-green-demo bg-cover bg-center bg-no-repeat high-sm:rounded-full md:flex-row md:bg-transparent"
-        >
-          <div
-            class="flex flex-col items-center gap-3 p-3 font-medium sm:flex-row"
-          >
-            <img class="p-3" width="100" src="/assets/images/gr.png" alt="" />
-            <p>
-              راهکـــار PMS ما برای کمک به هتل‌ها در افزایش نرخ اشغال، ساده‌سازی
-              عملیات <br />و ارائه یک تجربه مهمان برتر طراحی شده است.
-            </p>
-          </div>
-          <div>
-            <div>
-              <button
-                class="mb-3 ml-5 flex items-center gap-2 rounded-full border-0 border-white bg-green-600 p-1 px-2 font-bold text-white md:border md:border-solid md:border-white md:bg-transparent"
-              >
-                درخواست دمو<svg
-                  width="30"
-                  height="30"
-                  viewBox="0 0 34 34"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    opacity="0.5"
-                    d="M17.0002 31.1668C9.17591 31.1668 2.8335 24.8244 2.8335 17.0002C2.8335 9.17591 9.17591 2.8335 17.0002 2.8335C24.8244 2.8335 31.1668 9.17591 31.1668 17.0002C31.1668 24.8244 24.8244 31.1668 17.0002 31.1668Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M18.3742 11.9993C18.4715 11.8949 18.5888 11.8112 18.7191 11.7531C18.8494 11.695 18.9901 11.6638 19.1328 11.6613C19.2755 11.6588 19.4172 11.685 19.5495 11.7385C19.6818 11.7919 19.802 11.8714 19.9028 11.9723C20.0037 12.0732 20.0833 12.1934 20.1367 12.3257C20.1902 12.458 20.2164 12.5997 20.2139 12.7424C20.2114 12.885 20.1801 13.0257 20.1221 13.1561C20.064 13.2864 19.9803 13.4037 19.8759 13.501L16.3767 17.0001L19.8759 20.4993C19.9803 20.5966 20.064 20.7139 20.1221 20.8442C20.1801 20.9745 20.2114 21.1152 20.2139 21.2579C20.2164 21.4006 20.1902 21.5423 20.1367 21.6746C20.0833 21.8069 20.0037 21.927 19.9028 22.0279C19.802 22.1288 19.6818 22.2084 19.5495 22.2618C19.4172 22.3152 19.2755 22.3415 19.1328 22.339C18.9901 22.3365 18.8494 22.3052 18.7191 22.2472C18.5888 22.1891 18.4715 22.1054 18.3742 22.001L14.1242 17.751C13.9252 17.5518 13.8135 17.2817 13.8135 17.0001C13.8135 16.7186 13.9252 16.4485 14.1242 16.2493L18.3742 11.9993Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="m-auto my-32 w-fit max-w-[30rem] space-y-7 px-5 text-center">
         <div class="flex flex-col items-center gap-5 text-center sm:flex-row">
           <img src="/assets/images/logo-orange.png" alt="" />
@@ -889,6 +890,6 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="/assets/ts/nav.ts"></script>
+    <script type="module" src="/assets/ts/request-demo.ts"></script>
   </body>
 </html>

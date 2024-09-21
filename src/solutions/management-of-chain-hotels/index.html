@@ -17,7 +17,9 @@
             <a class="transition-all duration-700 hover:brightness-50" href="">
               قوانین و مقررات
             </a>
-            <a class="transition-all duration-700 hover:brightness-50" href=""
+            <a
+              class="transition-all duration-700 hover:brightness-50"
+              href="/faq/"
               >سوالات متداول</a
             >
           </div>
@@ -63,7 +65,7 @@
             >
           </li>
           <li
-            class="active relative after:absolute after:left-0 after:right-0 after:top-5 after:m-auto after:block after:w-fit after:content-[url('./assets/images/Selected.svg')]"
+            class="active relative after:absolute after:left-0 after:right-0 after:top-5 after:m-auto after:block after:w-fit after:content-[url('/assets/images/Selected.svg')]"
           >
             <a href="/solutions/">راهکار ها</a>
           </li>
@@ -75,17 +77,17 @@
           <li
             class="text-gray-800 transition-all duration-700 hover:brightness-50"
           >
-            <a href="">مقالات</a>
+            <a href="/articles/">مقالات</a>
           </li>
           <li
             class="text-gray-800 transition-all duration-700 hover:brightness-50"
           >
-            <a href="">تماس با ما</a>
+            <a href="/contact/">تماس با ما</a>
           </li>
           <li
             class="text-gray-800 transition-all duration-700 hover:brightness-50"
           >
-            <a href="">درباره من</a>
+            <a href="/about/">درباره ما</a>
           </li>
         </ul>
         <div class="flex items-center gap-5 md:hidden">
@@ -127,39 +129,37 @@
                     <li>
                       <img src="/assets/images/logo-orange.png" alt="" />
                     </li>
-                    <li
-                      class="text-gray-800 transition-all duration-700 hover:brightness-50"
-                    >
-                      <a href="/">صفحه اصلی</a>
-                    </li>
-                    <li
-                      class="text-gray-800 transition-all duration-700 hover:brightness-50"
-                    >
+                    <li>
                       <a
-                        class="active relative text-black after:absolute after:left-0 after:right-0 after:m-auto after:block after:w-fit after:content-[url('./assets/images/Selected.svg')]"
-                        href="/solutions/"
-                        >راهکار ها</a
+                        href="/"
+                        class="text-gray-800 transition-all duration-700 hover:brightness-50"
+                        >صفحه اصلی</a
                       >
                     </li>
                     <li
-                      class="text-gray-800 transition-all duration-700 hover:brightness-50"
+                      class="active relative after:absolute after:left-0 after:right-0 after:m-auto after:block after:w-fit after:content-[url('/assets/images/Selected.svg')]"
                     >
-                      <a href="/prices">قیمت ها</a>
+                      <a href="/solutions/">راهکار ها</a>
                     </li>
                     <li
                       class="text-gray-800 transition-all duration-700 hover:brightness-50"
                     >
-                      <a href="">مقالات</a>
+                      <a href="/prices/">قیمت ها</a>
                     </li>
                     <li
                       class="text-gray-800 transition-all duration-700 hover:brightness-50"
                     >
-                      <a href="">تماس با ما</a>
+                      <a href="/articles/">مقالات</a>
                     </li>
                     <li
                       class="text-gray-800 transition-all duration-700 hover:brightness-50"
                     >
-                      <a href="">درباره من</a>
+                      <a href="/contact/">تماس با ما</a>
+                    </li>
+                    <li
+                      class="text-gray-800 transition-all duration-700 hover:brightness-50"
+                    >
+                      <a href="/about/">درباره ما</a>
                     </li>
                   </ul>
                 </div>
@@ -190,7 +190,8 @@
             </svg>
           </button>
           <div>
-            <button
+            <a
+              href="/request-demo/"
               class="flex gap-2 rounded-full bg-green-600 p-3 font-bold text-white transition-all duration-700 hover:brightness-75"
             >
               درخواست دمو
@@ -220,7 +221,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </nav>
@@ -672,7 +673,8 @@
         </div>
         <div>
           <div>
-            <button
+            <a
+              href="/request-demo/"
               class="flex items-center gap-2 rounded-full border border-white p-1 px-2 font-bold text-white transition-all duration-700 hover:brightness-95"
             >
               درخواست دمو<svg
@@ -692,7 +694,7 @@
                   fill="white"
                 />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -744,19 +746,19 @@
           <div>
             <p class="text-2xl font-bold">دسترسی سریع</p>
             <ul class="mt-4 space-y-5">
-              <li><a href="">تماس با ما</a></li>
-              <li><a href="">درباره ما</a></li>
-              <li><a href="">درخواست دمو</a></li>
-              <li><a href="">مقالات</a></li>
+              <li><a href="/contact/">تماس با ما</a></li>
+              <li><a href="/about/">درباره ما</a></li>
+              <li><a href="/request-demo/">درخواست دمو</a></li>
+              <li><a href="/articles/">مقالات</a></li>
             </ul>
           </div>
           <div>
             <p class="text-2xl font-bold">محصول</p>
             <ul class="mt-4 space-y-5">
               <li><a href="/prices/">قیمت ها</a></li>
-              <li><a href="">سوالات متداول</a></li>
-              <li><a href="">پشتیبانی</a></li>
-              <li><a href="">راهکارها</a></li>
+              <li><a href="/faq/">سوالات متداول</a></li>
+              <li><a href="/contact/">پشتیبانی</a></li>
+              <li><a href="/solutions/">راهکارها</a></li>
             </ul>
           </div>
         </div>

@@ -1,13 +1,13 @@
-var question = document.querySelectorAll(".question");
-question.forEach(function (question) {
-    question.addEventListener("click", function () {
-        var active = document.querySelector(".question.active");
+let question = document.querySelectorAll(".question");
+question.forEach((question) => {
+    question.addEventListener("click", () => {
+        const active = document.querySelector(".question.active");
         if (active && active !== question) {
             active.classList.toggle("active");
             active.nextElementSibling.style.maxHeight = " 0";
         }
         question.classList.toggle("active");
-        var answer = question.nextElementSibling;
+        const answer = question.nextElementSibling;
         if (question.classList.contains("active")) {
             answer.style.maxHeight = answer.scrollHeight + "px";
         }

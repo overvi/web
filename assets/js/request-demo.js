@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var next = document.getElementById("next-step");
-    var prev = document.getElementById("prev-step");
-    var stepperEl = document.querySelector(".bs-stepper");
+    const next = document.getElementById("next-step");
+    const prev = document.getElementById("prev-step");
+    const stepperEl = document.querySelector(".bs-stepper");
     //@ts-ignore
     var stepper = new Stepper(stepperEl);
-    next.addEventListener("click", function () {
+    next.addEventListener("click", () => {
         stepper.next();
     });
-    prev === null || prev === void 0 ? void 0 : prev.addEventListener("click", function () {
+    prev === null || prev === void 0 ? void 0 : prev.addEventListener("click", () => {
         stepper.previous();
     });
-    stepperEl.addEventListener("show.bs-stepper", function (ev) {
-        var stepperEvent = ev;
+    stepperEl.addEventListener("show.bs-stepper", (ev) => {
+        const stepperEvent = ev;
         if (stepperEvent.detail.indexStep === 2) {
             next.classList.remove("bg-orange-400");
             next.classList.add("bg-green-600");
